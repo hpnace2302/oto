@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/font-awesome/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="./assets/css-detail/style.css">
+    <link rel="stylesheet" href="./assets/css-detail/base.css">
+    <link rel="stylesheet" href="./assets/css-detail/grid.css">
+    <link rel="stylesheet" href="./assets/css-detail/responsive.css">
+    <!-- reset css -->
+    <style>
+      html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {  margin: 0;  padding: 0;  border: 0;  font-size: 100%;  font: inherit;  vertical-align: baseline;}
+      article, aside, details, figcaption, figure, 
+      footer, header, hgroup, menu, nav, section {display: block;}body {line-height: 1;}ol, ul {list-style: none;}blockquote, q {quotes: none;}blockquote:before, blockquote:after,q:before, q:after {content: '';content: none;}table {border-collapse: collapse;border-spacing: 0;}
+    </style>
+    <!-- base style -->
+    <style>*,*:before,*:after {  box-sizing: border-box;}/* using rem unit */html {  font-size: 62.5%;scroll-behavior: smooth;}a {  text-decoration: none;}img {  display: block;  max-width: 100%;}body {  font-family: 'Open Sans', sans-serif;  font-size: 16px;  line-height: 1;}input,button,textarea,select {  outline: none;  font-family: 'Open Sans', sans-serif;  font-size: 16px;  line-height: 1;}input {  line-height: normal;}button {  cursor: pointer;}
+    </style>
+  </head>
+  <body>
+    <div id="home"></div>
+    <div class="wrapper">
+      <div class="social">
+        <img src="./assets/img/youtube.PNG" alt="" class="social__item">
+        <img src="./assets/img/fb.PNG" alt="" class="social__item">
+      </div>
+      <div class="phone">
+        <div class="phone__icon">
+          <i class="fas fa-phone"></i>
+        </div>
+        <div class="phone__number">0123456789</div>
+      </div>
+      <div class="regist_make-app">
+        <div class="regist">
+          <a href="#" class="regist__link">Đăng ký lái thử</a>
+        </div>
+        <div class="make-app">
+          <a href="#" class="make-app__link">Đặt lịch bảo dưỡng</a>
+        </div>
+      </div>
+      <div class="scroll-top">
+        <a href="#home">
+          <div class="scroll-top__title">Về đầu trang</div>
+          <div class="scroll-top__icon"><i class="fas fa-arrow-up"></i></div>
+        </a>
+      </div>
+      <div class="grid">
+        <div class="header">
+          <div class="header__left">
+            <img src="./assets/img/hyundai-logo.png" alt="" class="header__logo">
+            <ul class="header__nav">
+              <li class="header__nav--item">
+                <a href="#" class="header__nav--link">Giới thiệu</a>
+              </li>
+              <li class="header__nav--item active">
+                <a href="" class="header__nav--link">Sản phẩm</a>
+                <ul class="header__nav--item__subnav">
+                  <li class="header__nav--item__subnav--item">Xe du lịch</li>
+                  <li class="header__nav--item__subnav--item">Xe SUV</li>
+                  <li class="header__nav--item__subnav--item">Xe thương mại</li>
+                  <li class="header__nav--item__subnav--item">Limousine An Phú</li>
+                </ul>
+              </li>
+              <li class="header__nav--item">
+                <a href="" class="header__nav--link">Tin tức</a>
+                <ul class="header__nav--item__subnav">
+                  <li class="header__nav--item__subnav--item">Tin khuyến mãi</li>
+                  <li class="header__nav--item__subnav--item">Tin khuyến mãi</li>
+                  <li class="header__nav--item__subnav--item">Tin khuyến mãi</li>
+                  <li class="header__nav--item__subnav--item">Tin khuyến mãi</li>
+                  <li class="header__nav--item__subnav--item">Tin khuyến mãi</li>
+                  <li class="header__nav--item__subnav--item">Tin khuyến mãi</li>
+                  <li class="header__nav--item__subnav--item">Tin khuyến mãi</li>
+                </ul>
+              </li>
+              <li class="header__nav--item">
+                <a href="" class="header__nav--link">Dịch vụ</a>
+                <ul class="header__nav--item__subnav">
+                  <li class="header__nav--item__subnav--item">Chăm sóc khách hàng</li>
+                  <li class="header__nav--item__subnav--item">Chính sách bảo hành</li>
+                  <li class="header__nav--item__subnav--item">Bảo dưỡng định kỳ</li>
+                  <li class="header__nav--item__subnav--item">Phụ tùng và phụ kiện</li>
+                </ul>
+              </li>
+              <li class="header__nav--item">
+                <a href="" class="header__nav--link">Đăng ký lái thử</a>
+                <ul class="header__nav--item__subnav">
+                  <li class="header__nav--item__subnav--item">Đăng ký lái thử</li>
+                  <li class="header__nav--item__subnav--item">Đặt lịch bảo dưỡng</li>
+                </ul>
+              </li>
+              <li class="header__nav--item">
+                <a href="" class="header__nav--link">Mua xe</a>
+                <ul class="header__nav--item__subnav">
+                  <li class="header__nav--item__subnav--item">Bảng giá</li>
+                  <li class="header__nav--item__subnav--item">Dự toán chi phí</li>
+                  <li class="header__nav--item__subnav--item">Hỗ trợ trả góp</li>
+                  <li class="header__nav--item__subnav--item">Hướng dẫn thủ tục</li>
+                </ul>
+              </li>
+              <li class="header__nav--item">
+                <a href="" class="header__nav--link">Liên hệ</a>
+              </li>
+            </ul>
+          </div>
+          <img src="./assets/img/daily-logo.png" alt="" class="header__right">
+          <div class="header__mb-tl">
+            <div class="header__mb-tl__icon" onclick="toggleFunction()"><i class="fas fa-bars"></i></div>
+            <ul class="header__mb-tl__nav--list">
+              <li class="header__mb-tl__nav--item">
+                <div class="header__mb-tl__nav--item__name">
+                  <p>Giới thiệu</p>
+                </div>
+              </li>
+              <li class="header__mb-tl__nav--item">
+                <div class="header__mb-tl__nav--item__name"  onclick="toggleFunction2()">
+                  <p>Sản phẩm</p>
+                  <i class="fas fa-sort-down"></i>
+                </div>
+                <ul class="header__mb-tl__nav--item__subnav">
+                  <li class="header__mb-tl__nav--item__subnav--item">Xe du lịch</li>
+                  <li class="header__mb-tl__nav--item__subnav--item">Xe SUV</li>
+                  <li class="header__mb-tl__nav--item__subnav--item">Xe thương mại</li>
+                  <li class="header__mb-tl__nav--item__subnav--item">Limousine An Phú</li>
+                </ul>
+              </li>
+              <li class="header__mb-tl__nav--item">
+                <div class="header__mb-tl__nav--item__name">
+                  <p>Tin tức</p>
+                  <i class="fas fa-sort-down"></i>
+                </div>
+                <ul class="header__mb-tl__nav--item__subnav">
+                  <li class="header__mb-tl__nav--item__subnav--item">Tin khuyến mãi</li>
+                  <li class="header__mb-tl__nav--item__subnav--item">Tin khuyến mãi</li>
+                  <li class="header__mb-tl__nav--item__subnav--item">Tin khuyến mãi</li>
+                  <li class="header__mb-tl__nav--item__subnav--item">Tin khuyến mãi</li>
+                  <li class="header__mb-tl__nav--item__subnav--item">Tin khuyến mãi</li>
+                  <li class="header__mb-tl__nav--item__subnav--item">Tin khuyến mãi</li>
+                  <li class="header__mb-tl__nav--item__subnav--item">Tin khuyến mãi</li>
+                </ul>
+              </li>
+              <li class="header__mb-tl__nav--item">
+                <div class="header__mb-tl__nav--item__name">
+                  <p>Dịch vụ</p>
+                  <i class="fas fa-sort-down"></i>
+                </div>
+                <ul class="header__mb-tl__nav--item__subnav">
+                  <li class="header__mb-tl__nav--item__subnav--item">Chăm sóc khách hàng</li>
+                  <li class="header__mb-tl__nav--item__subnav--item">Chính sách bảo hành</li>
+                  <li class="header__mb-tl__nav--item__subnav--item">Bảo dưỡng định kỳ</li>
+                  <li class="header__mb-tl__nav--item__subnav--item">Phụ tùng và phụ kiện</li>
+                </ul>
+              </li>
+              <li class="header__mb-tl__nav--item">
+                <div class="header__mb-tl__nav--item__name">
+                  <p>Đăng ký lái thử</p>
+                  <i class="fas fa-sort-down"></i>
+                </div>
+                <ul class="header__mb-tl__nav--item__subnav">
+                  <li class="header__mb-tl__nav--item__subnav--item">Đăng ký lái thử</li>
+                  <li class="header__mb-tl__nav--item__subnav--item">Đặt lịch bảo dưỡng</li>
+                </ul>
+              </li>
+              <li class="header__mb-tl__nav--item">
+                <div class="header__mb-tl__nav--item__name">
+                  <p>Mua xe</p>
+                  <i class="fas fa-sort-down"></i>
+                </div>
+                <ul class="header__mb-tl__nav--item__subnav">
+                  <li class="header__mb-tl__nav--item__subnav--item">Bảng giá</li>
+                  <li class="header__mb-tl__nav--item__subnav--item">Dự toán chi phí</li>
+                  <li class="header__mb-tl__nav--item__subnav--item">Hỗ trợ trả góp</li>
+                  <li class="header__mb-tl__nav--item__subnav--item">Hướng dẫn thủ tục</li>
+                </ul>
+              </li>
+              <li class="header__mb-tl__nav--item">
+                <div class="header__mb-tl__nav--item__name">
+                  <p>Liên hệ</p>
+                </div>
+              </li>
+              <li class="header__mb-tl__nav--item">
+                <img src="./assets/img/daily-logo.png" alt="" class="header__mb-tl__logo">
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="content__slider">
+          <div class="grid wide">
+            <div class="content__slider--detail">
+              <div class="content__slider--detail__desc">
+                <div class="content__slider--detail__desc--name">GRAND I10</div>
+                <div class="content__slider--detail__desc--title">NHẤN NÚT KHỞI ĐỘNG CUỘC SỐNG MỚI</div>
+                <div class="content__slider--detail__desc--info">
+                  <div>- Thiết kế cá tính, thời trang</div>
+                  <div>- Kết nối không giới hạn</div>
+                  <div>- Bền bỉ, mạnh mẽ và an toàn</div>
+                  <div>- Bền bỉ, mạnh mẽ tinh tế</div>
+                </div>
+                <div class="content__slider--detail__desc--btn">Dự toán chi phí</div>
+              </div>
+              <img src="./assets/img-detail/GRAND-I10 .png" alt="" class="content__slider--detail__img">
+            </div>
+            <div class="nav">
+              <div class="content__slider--control">
+                <div class="content__slider--control__item l-2">
+                  <img src="./assets/img-detail/affix-cover.png" alt="" class="content__slider--control__item--img">
+                  <div class="content__slider--control__item--name">Giới thiệu</div>
+                </div>
+                <div class="content__slider--control__item l-2">
+                  <img src="./assets/img-detail/affix-360.png" alt="" class="content__slider--control__item--img">
+                  <div class="content__slider--control__item--name">Cảm nhận 360</div>
+                </div>
+                <div class="content__slider--control__item l-2">
+                  <img src="./assets/img-detail/affix-gallery.png" alt="" class="content__slider--control__item--img">
+                  <div class="content__slider--control__item--name">Hình ảnh</div>
+                </div>
+                <div class="content__slider--control__item l-2">
+                  <img src="./assets/img-detail/affix-review.png" alt="" class="content__slider--control__item--img">
+                  <div class="content__slider--control__item--name">Đánh giá xe</div>
+                </div>
+                <div class="content__slider--control__item l-2">
+                  <img src="./assets/img-detail/affix-spec.png" alt="" class="content__slider--control__item--img">
+                  <div class="content__slider--control__item--name">Thông số xe</div>
+                </div>
+                <div class="content__slider--control__item l-2">
+                  <img src="./assets/img-detail/affix-catalog.png" alt="" class="content__slider--control__item--img">
+                  <div class="content__slider--control__item--name">Tải catalog</div>
+                </div>
+              </div>
+              <div class="content__slider--brand">
+                <img src="./assets/img-detail/GRAND-I10_logo.png" alt="" class="content__slider--brand__img">
+              </div>
+              <div class="content__slider--nav">
+                <div class="content__slider--nav__item active"><a href="#highlights">Nổi bật</a></div>
+                <div class="content__slider--nav__item"><a href="#exterior">Ngoại thất</a></div>
+                <div class="content__slider--nav__item"><a href="#furniture">Nội thất</a></div>
+                <div class="content__slider--nav__item"><a href="#operate">Vận hành</a></div>
+                <div class="content__slider--nav__item"><a href="#safe">An toàn</a></div>
+                <div class="content__slider--nav__item"><a href="#convenient">Tiện nghi</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content__highlights" id="highlights">
+          <div class="heading">Nổi bật</div>
+          <div class="content__title">KHÔNG GIAN RỘNG RÃI TRONG MỘT THIẾT KẾ NHỎ GỌN</div>
+          <div class="content__desc"><span>Grand i10</span> sở hữu kích thước lớn hàng đầu phân khúc, đem đến một không gian thỏa mái tối đa cũng như phong cách năng động cho chủ nhân. Bên cạnh đó, những công nghệ hàng đầu được trang bị trên xe giúp cho trải nghiệm lái xe càng trở nên thú vị</div>
+          <div class="content__highlights--desgin">
+            <div class="content__highlights--desgin__item l-4 m-4">
+              <img src="./assets/img-detail/nb1.jpg" class="content__highlights--desgin__item--img" alt="">
+            </div>
+            <div class="content__highlights--desgin__item l-4 m-4">
+              <div class="title">THIẾT KẾ ẤN TƯỢNG</div>
+              <div class="desc"><span>Grand i10 2017</span> gây ấn tượng bởi vẻ ngoài mạnh mẽ, thể thao hơn với điểm nhấn là lưới tản nhiệt được thiết kế mới phong cách Thác nước cùng dải đèn LED chạy ban ngày Daytime Running Lights (DRL).</div>
+            </div>
+            <div class="content__highlights--desgin__item l-4 m-4">
+              <img src="./assets/img-detail/nb2.jpg" class="content__highlights--desgin__item--img" alt="">
+            </div>
+          </div>
+          <div class="content__highlights--desgin2">
+            <img src="./assets/img-detail/nb3.png" alt="" class="content__highlights--desgin2__img">
+          </div>
+          <div class="content__highlights--desgin3">
+            <img src="./assets/img-detail/nb4.jpg" alt="" class="content__highlights--desgin3__img">
+            <div class="content__highlights--desgin3__title">Phong cách thể thao với lưới tản nhiệt được thiết kế mới theo phong cách “Thác nước”</div>
+          </div>
+          <div class="content__highlights--desgin4">
+            <img src="./assets/img-detail/nb5.jpg" alt="" class="content__highlights--desgin4__img">
+            <div class="content__highlights--desgin4__title">Phong cách thể thao không thể nhầm lẫn</div>
+          </div>
+          <div class="content__highlights--desgin5">
+            <div class="content__highlights--desgin5__left l-6">
+              <img src="./assets/img-detail/nb6.jpg" alt="" class="content__highlights--desgin5__left--img">
+              <div class="content__highlights--desgin5__left--title">Không gian chứa đồ rộng rãi</div>
+              <div class="content__highlights--desgin5__left--desc"><span>Grand i10</span> sở hữu không gian chứa đồ lớn nhất phân khúc, giúp bạn chở được tối đa số hành lí cho những chuyến đi cùng với cả gia đình.</div>
+            </div>
+            <div class="content__highlights--desgin5__right l-6">
+              <img src="./assets/img-detail/nb7.jpg" alt="" class="content__highlights--desgin5__right--img">
+              <div class="content__highlights--desgin5__right--title">An toàn tối đa</div>
+              <div class="content__highlights--desgin5__right--desc"><span>Grand i10</span> được trang bị 2 túi khí cho ghế lái và ghế phụ, đảm bảo an toàn tối đa cho hành khách trong trường hợp xảy ra va chạm.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content__exterior" id="exterior">
+          <div class="heading">NGOẠI THẤT</div>
+          <div class="content__exterior--bg"></div>
+          <div class="title">ẤN TƯỢNG TỪ CÁI NHÌN ĐẦU TIÊN</div>
+          <div class="desc">Mọi đường nét trên <span>Grand i10</span> đều để lại ấn tượng về sự cá tính, thời trang và phong cách.
+          </div>
+          <div class="grid wide">
+            <img src="./assets/img-detail/nb3.png" alt="" class="content__exterior--img">
+            <div class="content__exterior2">
+              <div class="content__exterior2--item l-6 m-6">
+                <img src="./assets/img-detail/nb2 (1).jpg" alt="" class="content__exterior2--item__img">
+                <div class="content__exterior2--item__title">Đèn pha</div>
+                <div class="content__exterior2--item__desc">Cụm đèn pha chiếu sáng của Grand i10 được thiết kế trang nhã, hài hòa với tổng thể của chiếc xe đồng thời đảm bảo độ sáng tối đa.</div>
+              </div>
+              <div class="content__exterior2--item l-6 m-6">
+                <img src="./assets/img-detail/nb3.jpg" alt="" class="content__exterior2--item__img">
+                <div class="content__exterior2--item__title">Cụm đèn LED ban ngày mới</div>
+                <div class="content__exterior2--item__desc">Cụm đèn LED chạy ban ngày mới (Daytime Running Lights) trên Grand i10 đem đến vẻ thể thao đậm nét cho chiếc xe.</div>
+              </div>
+              <div class="content__exterior2--item l-6 m-6">
+                <img src="./assets/img-detail/nb4 (1).jpg" alt="" class="content__exterior2--item__img">
+                <div class="content__exterior2--item__title">Cụm lưới tản nhiệt mới</div>
+                <div class="content__exterior2--item__desc">Grand i10 2017 sở hữu cụm lưới tản nhiệt mới tạo hình Thác nước, trở thành điểm nhận diện đặc trưng trong thiết kế của các mẫu xe Hyundai.</div>
+              </div>
+            </div>
+            <div class="content__exterior3">
+              <div class="title">CHIẾC XE ĐÔ THỊ HÀNG ĐẦU</div>
+              <div class="desc">Sở hữu những đường nét thiết kế mạnh mẽ và đậm nét cá tính, Grand i10 2017 được nâng tầm đẳng cấp của một chiếc xe đô thị hàng đầu.
+              </div>
+              <div class="content__exterior2">
+                <div class="content__exterior2--item l-6 m-6">
+                  <img src="./assets/img-detail/nb8.jpg" alt="" class="content__exterior2--item__img">
+                  <div class="content__exterior2--item__title">Sấy kính sau</div>
+                  <div class="content__exterior2--item__desc">Grand i10 sở hữu kính sau tích hợp chức năng sấy điện, giúp đảm bảo tầm nhìn phía sau cho người lái trong điều kiện trời sương mù hoặc có mưa.</div>
+                </div>
+                <div class="content__exterior2--item l-6 m-6">
+                  <img src="./assets/img-detail/nb9.jpg" alt="" class="content__exterior2--item__img">
+                  <div class="content__exterior2--item__title">Đèn hậu kích cỡ lớn</div>
+                  <div class="content__exterior2--item__desc">Grand i10 sở hữu cụm đèn hậu kích cỡ lớn, được bố trí ở vị trí thuận tiện dễ quan sát, nhằm tăng độ nhận diện từ xa, giúp đảm bảo an toàn khi vận hành.</div>
+                </div>
+                <div class="content__exterior2--item l-6 m-6">
+                  <img src="./assets/img-detail/nb10.jpg" alt="" class="content__exterior2--item__img">
+                  <div class="content__exterior2--item__title">Cản sau thiết kế mới với 2 tông màu</div>
+                  <div class="content__exterior2--item__desc"><span>Grand i10 2017</span> được tái thiết kế cản sau với tấm nền màu đen cùng 2 tấm phản quang màu đỏ nổi bật, giúp tăng vẻ thể thao, năng động cho xe.</div>
+                </div>
+              </div>
+            </div>
+            <div class="content__exterior4">
+              <div class="content__exterior4--item l-4 m-4">
+                <img src="./assets/img-detail/nb15.jpg" alt="" class="content__exterior4--item__img">
+                <div class="content__exterior4--item__title">Đèn sương mù</div>
+                <div class="content__exterior4--item__desc">Đèn sương mù của Grand i10 được đặt thấp ở phần cản trước, giúp tăng đảm bảo ánh sáng trong điều kiện vận hành có sương mù.</div>
+              </div>
+              <div class="content__exterior4--item l-4 m-4">
+                <img src="./assets/img-detail/nb16.jpg" alt="" class="content__exterior4--item__img">
+                <div class="content__exterior4--item__title">Hốc hút gió trước</div>
+                <div class="content__exterior4--item__desc">Hốc hút gió phía trước nhằm giảm đáng kể sức cản của gió đồng thời giảm nhiệt la-zăng, lốp, giúp tăng cường khả năng vận hành ổn định và an toàn.</div>
+              </div>
+              <div class="content__exterior4--item l-4 m-4">
+                <img src="./assets/img-detail/nb17.jpg" alt="" class="content__exterior4--item__img">
+                <div class="content__exterior4--item__title">Tay nắm cửa mạ Crom</div>
+                <div class="content__exterior4--item__desc">Tay nắm cửa mạ Crom trên Grand i10 tạo nên vẻ lịch lãm, sang trọng cho chiếc xe.</div>
+              </div>
+              <div class="content__exterior4--item l-4 m-4">
+                <img src="./assets/img-detail/nb13.jpg" alt="" class="content__exterior4--item__img">
+                <div class="content__exterior4--item__title">Tấm phản quang phía sau</div>
+                <div class="content__exterior4--item__desc">Tấm phản quang đuôi xe được thiết kế mới, kết hợp cùng cản sau màu đen tạo nên vẻ nổi bật và mạnh mẽ cho Grand i10</div>
+              </div>
+              <div class="content__exterior4--item l-4 m-4">
+                <img src="./assets/img-detail/nb12.jpg" alt="" class="content__exterior4--item__img">
+                <div class="content__exterior4--item__title">Gạt mưa kính sau</div>
+                <div class="content__exterior4--item__desc"><span>Grand i10</span> được trang bị gạt mưa ở kính sau, giúp làm sạch tấm kính tăng khả năng quan sát của lái xe.</div>
+              </div>
+              <div class="content__exterior4--item l-4 m-4">
+                <img src="./assets/img-detail/nb11.jpg" alt="" class="content__exterior4--item__img">
+                <div class="content__exterior4--item__title">Đèn phanh trên cao</div>
+                <div class="content__exterior4--item__desc">Xe được trang bị đèn phanh trên cao dạng LED, giúp nhanh chóng cảnh báo cho phương tiện phía sau biết khi bạn thực hiện phanh, dừng trong khi lưu thông.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content__furniture" id="furniture">
+          <div class="heading">NỘI THẤT</div>
+          <div class="content__furniture--bg"></div>
+          <div class="grid wide">
+            <div class="title">KHÔNG GIAN NỘI THẤT ẤN TƯỢNG</div>
+            <div class="desc"><span>Grand i10</span> sở hữu không gian nội thất rộng rãi, kết hợp cùng phong cách thiết kế cá tính với những màu sắc trẻ trung tạo nên vẻ ấn tượng không thể trộn lẫn.</div>
+            <img src="./assets/img-detail/noi2.jpg" alt="" class="content__furniture--img">
+            <div class="content__furniture--title">Tiện nghi hàng đầu</div>
+            <div class="content__furniture--desc">Grand i10 sở hữu những tính năng tiện ích cao cấp hàng đầu phân khúc,
+              giúp đáp ứng những đòi hỏi khắt khe nhất của chủ sở hữu.</div>
+            <div class="content__exterior2">
+              <div class="content__exterior2--item l-6 m-6">
+                <img src="./assets/img-detail/noi3.jpg" alt="" class="content__exterior2--item__img">
+                <div class="content__exterior2--item__title">Ngăn chứa đồ có chức năng làm mát</div>
+                <div class="content__exterior2--item__desc">Grand i10 được trang bị ngăn chứa đồ có chức năng làm mát, giúp những món đồ ăn, đồ uống của bạn luôn trong tình trạng tươi ngon sẵn sàng để thưởng thức.</div>
+              </div>
+              <div class="content__exterior2--item l-6 m-6">
+                <img src="./assets/img-detail/noi4.jpg" alt="" class="content__exterior2--item__img">
+                <div class="content__exterior2--item__title">Màn hình trung tâm cảm ứng 7 inch</div>
+                <div class="content__exterior2--item__desc">Grand i10 sở hữu màn hình cảm ứng trung tâm kích cỡ 7 inch, hỗ trợ giải trí nghe nhạc Mp3/Radio/Bluetooth/Usb/AUX, xem phim Mp4 FullHD cùng bản đồ tích hợp được phát triển dành riêng cho thị trường Việt Nam.</div>
+              </div>
+              <div class="content__exterior2--item l-6 m-6">
+                <img src="./assets/img-detail/noi5.jpg" alt="" class="content__exterior2--item__img">
+                <div class="content__exterior2--item__title">Vô lăng tích hợp phím chức năng</div>
+                <div class="content__exterior2--item__desc"><span>Grand i10 2017</span> sở hữu vô lăng tích hợp các phím chức năng, giúp người lái dễ dàng điều chỉnh các thông số cũng như tăng giảm âm lượng, chuyển bài hát, đảm bảo an toàn khi vận hành.</div>
+              </div>
+            </div>
+            <div class="content__exterior4">
+              <div class="content__exterior4--item l-4 m-4">
+                <img src="./assets/img-detail/noi6.jpg" alt="" class="content__exterior4--item__img">
+                <div class="content__exterior4--item__title">Túi tài liệu sau ghế</div>
+                <div class="content__exterior4--item__desc">Túi tài liệu được thiết kế liền mạch tại mặt lưng ghế hàng ghế trước, giúp bạn có thể để những cuốn sách và tạp chí yêu thích.</div>
+              </div>
+              <div class="content__exterior4--item l-4 m-4">
+                <img src="./assets/img-detail/noi7.jpg" alt="" class="content__exterior4--item__img">
+                <div class="content__exterior4--item__title">Ghế điều chỉnh độ cao</div>
+                <div class="content__exterior4--item__desc">Hệ thống bơm hơi trên xe có cơ cấu đơn giản và hiệu quả giúp ghế người lái có thể điều chỉnh độ cao để giúp đạt tới vị trí như mong muốn.</div>
+              </div>
+              <div class="content__exterior4--item l-4 m-4">
+                <img src="./assets/img-detail/noi8.jpg" alt="" class="content__exterior4--item__img">
+                <div class="content__exterior4--item__title">Giá để cốc trung tâm</div>
+                <div class="content__exterior4--item__desc">Grand i10 được trang bị giá để cốc trung tâm có vị trí thuận lợi, giúp để những món đồ hay đồ uống ưa thích của bạn một cách dễ dàng.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content__operate" id="operate">
+          <div class="heading">Vận hành</div>
+          <div class="content__operate--bg"></div>
+          <div class="grid wide">
+            <div class="title">KHẢ NĂNG VẬN HÀNH XUẤT SẮC</div>
+            <div class="desc"><span>Grand i10</span> được tối ưu với hệ thống khung gầm, động cơ, hộp số đem đến khả năng vận hành xuất sắc, cân bằng giữa những yếu tố bền bỉ và tiết kiệm.</div>
+            <div class="content__operate--details">
+              <div class="content__operate--details__left">
+                <div class="content__operate--details__left--title">Động cơ Kappa 1.2L</div>
+                <div class="content__operate--details__left--desc">Cung cấp công suất 87 mã lực tại 6.000 vòng/phút cùng Momen xoắn cực đại 120Nm tại 4.000 vòng/phút với mức khí thải CO2 tối thiểu nhờ công nghệ điều khiển van biến thiên (CVVT)</div>
+                <div class="content__operate--details__left--item">
+                  <img src="./assets/img-detail/1.PNG" alt="" class="content__operate--details__left--item__img">
+                  <div class="content__operate--details__left--item__parameter">83 <p>ps</p></div>
+                </div>
+                <div class="content__operate--details__left--item">
+                  <img src="./assets/img-detail/2.PNG" alt="" class="content__operate--details__left--item__img">
+                  <div class="content__operate--details__left--item__parameter">11.6 <p>kg·m</p></div>
+                </div>
+              </div>
+              <div class="content__operate--details__right">
+                <img src="./assets/img-detail/v2.jpg" alt="" class="content__operate--details__right--img">
+              </div>
+            </div>
+            <div class="content__exterior4">
+              <div class="content__exterior4--item l-4 m-4">
+                <img src="./assets/img-detail/v4.jpg" alt="" class="content__exterior4--item__img">
+                <div class="content__exterior4--item__title">Hộp số sàn</div>
+                <div class="content__exterior4--item__desc">Gồm 5 cấp số với các bước chuyển số được tinh chỉnh làm tăng khả năng phản ứng và sự nhạy bén khi di chuyển, đồng thời giúp tiết kiệm nhiên liệu tối đa.</div>
+              </div>
+              <div class="content__exterior4--item l-4 m-4">
+                <img src="./assets/img-detail/v5.jpg" alt="" class="content__exterior4--item__img">
+                <div class="content__exterior4--item__title">Hộp số tự động</div>
+                <div class="content__exterior4--item__desc">Gồm 4 cấp số đảm bảo sự kết hợp hoàn hảo giữa tính năng vận hành mạnh mẽ, tiết kiệm nhiên liệu cùng sự bền bỉ bằng các công nghệ tiên tiến nhất như van điện từ và bộ chuyển đổi momen xoắn phẳng.</div>
+              </div>
+              <div class="content__exterior4--item l-4 m-4">
+                <img src="./assets/img-detail/v6.jpg" alt="" class="content__exterior4--item__img">
+                <div class="content__exterior4--item__title">Đồng hồ hiển thị cấp số</div>
+                <div class="content__exterior4--item__desc">Đồng hồ điện tử hiện thị cấp số hiện hành giúp bạn chủ động trong việc điều khiển xe hơn.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content__safe" id="safe">
+          <div class="heading">An toàn</div>
+          <div class="content__safe--bg"></div>
+          <div class="title">CÔNG NGHỆ AN TOÀN HÀNG ĐẦU</div>
+          <div class="desc">Grand i10 sở hữu không gian nội thất rộng rãi, kết hợp cùng phong cách thiết kế cá tính với những màu sắc trẻ trung tạo nên vẻ ấn tượng không thể trộn lẫn.</div>
+          <div class="grid wide">
+            <div class="content__safe1">
+              <div class="content__safe--item">
+                <div class="content__safe--item__title">Túi khí đôi</div>
+                <div class="content__safe--item__desc">Grand i10 hoàn toàn làm hài lòng những người khó tính nhất bằng công nghệ an toàn chủ động với túi khí dành cho lái xe và hành khách, giúp đảm bảo an toàn tránh chấn thương trong trường hợp va chạm.</div>
+              </div>
+              <div class="content__safe--item">
+                <img src="./assets/img-detail/an2.jpg" alt="" class="content__safe--item__img">
+              </div>
+            </div>
+          </div>
+          <div class="content__safe2">
+            <div class="content__safe--item">
+              <div class="grid wide">
+                <div class="content__safe--item__title">Hệ thống hỗ trợ khởi hành ngang dốc HAC</div>
+              <div class="content__safe--item__desc">Hệ thống HAC sẽ giúp chiếc xe giữ nguyên vị trí đang dừng khi xe đỗ ở ngang dốc, xe sẽ di chuyển khi tài xế chuyển sang bàn đạp ga giúp bạn dễ dàng tiếp tục cuộc hành trình mà không lo xe bị tụt dốc.</div>
+              </div>
+            </div>
+            <div class="content__safe--item">
+              <img src="./assets/img-detail/an3.jpg" alt="" class="content__safe--item__img">
+            </div>
+          </div>
+          <div class="grid wide">
+            <div class="content__exterior4">
+              <div class="content__exterior4--item l-4 m-4">
+                <img src="./assets/img-detail/an4.jpg" alt="" class="content__exterior4--item__img">
+                <div class="content__exterior4--item__title">Cửa sổ điều chỉnh điện</div>
+                <div class="content__exterior4--item__desc">Bộ điều khiển điện cửa sổ được đặt bên ghế lái giúp bạn dễ đàng điều khiển cửa sổ cũng như đóng mở cửa ra vào.</div>
+              </div>
+              <div class="content__exterior4--item l-4 m-4">
+                <img src="./assets/img-detail/an5.jpg" alt="" class="content__exterior4--item__img">
+                <div class="content__exterior4--item__title">Sấy kính sau</div>
+                <div class="content__exterior4--item__desc">Grand i10 sở hữu kính sau tích hợp chức năng sấy điện, giúp đảm bảo tầm nhìn phía sau cho người lái trong điều kiện trời sương mù hoặc có mưa.</div>
+              </div>
+              <div class="content__exterior4--item l-4 m-4">
+                <img src="./assets/img-detail/an6.jpg" alt="" class="content__exterior4--item__img">
+                <div class="content__exterior4--item__title">Cửa sổ an toàn chống kẹt</div>
+                <div class="content__exterior4--item__desc">Grand i10 được trang bị cửa sổ với cảm biến chống kẹt tự động, giúp chiếc xe an toàn hơn trong trường hợp gặp chướng ngại vật khi kéo gương.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content__convenient" id="convenient">
+          <div class="heading">Tiện nghi</div>
+          <div class="content__convenient--bg"></div>
+          <div class="grid wide">
+            <div class="title">NHỮNG CÔNG NGHỆ ĐỈNH CAO</div>
+            <div class="title titlept0">TÍCH HỢP TRONG MỘT CHIẾC XE NHỎ GỌN</div>
+            <div class="desc">Những chuyến hành trình của bạn sẽ trở nên thú vị hơn với những công nghệ tiện ích được trang bị bên trong <span>Grand i10</span></div>
+            <div class="content__exterior2">
+              <div class="content__exterior2--item l-6 m-6">
+                <img src="./assets/img-detail/tien2.jpg" alt="" class="content__exterior2--item__img">
+                <div style="color: #000;" class="content__exterior2--item__title">Hệ thống hỗ trợ đỗ xe RPAS</div>
+                <div class="content__exterior2--item__desc">Hệ thống hỗ trợ đỗ xe RPAS (Rear Parking Assist System) gồm 4 cảm biến phía sau giúp phát hiện những chướng ngại vật, hỗ trợ bạn đỗ xe một cách an toàn và nhanh chóng.</div>
+              </div>
+              <div class="content__exterior2--item l-6 m-6">
+                <img src="./assets/img-detail/tien3.jpg" alt="" class="content__exterior2--item__img">
+                <div class="content__exterior2--item__title">Màn hình trung tâm cảm ứng 7 inch</div>
+                <div class="content__exterior2--item__desc">Grand i10 sở hữu màn hình cảm ứng trung tâm kích cỡ 7 inch, hỗ trợ giải trí nghe nhạc Mp3/Radio/Bluetooth/Usb/AUX, xem phim Mp4 FullHD cùng bản đồ tích hợp được phát triển dành riêng cho thị trường Việt Nam.</div>
+              </div>
+            </div>
+            <div class="content__exterior4">
+              <div class="content__exterior4--item l-4 m-4">
+                <img src="./assets/img-detail/tien4.jpg" alt="" class="content__exterior4--item__img">
+                <div class="content__exterior4--item__title">Chìa khóa thông minh & Khởi động nút bấm</div>
+                <div class="content__exterior4--item__desc">Chìa khóa thông minh giúp chủ xe có thể dễ dàng vào trong xe với chỉ một nút bấm trên tay nắm cửa. Nút khởi động Start/Stop Engine giúp việc khởi động hoặt tắt máy đơn giản hơn bao giờ hết với chỉ 1 nút bấm.</div>
+              </div>
+              <div class="content__exterior4--item l-4 m-4">
+                <img src="./assets/img-detail/tien5.jpg" alt="" class="content__exterior4--item__img">
+                <div class="content__exterior4--item__title">Khay để đồ phía sau</div>
+                <div class="content__exterior4--item__desc">Khay để đồ phía sau giúp bạn thuận tiện để vật dụng cá nhân</div>
+              </div>
+              <div class="content__exterior4--item l-4 m-4">
+                <img src="./assets/img-detail/tien6.jpg" alt="" class="content__exterior4--item__img">
+                <div class="content__exterior4--item__title">Đèn chiếu sáng cốp</div>
+                <div class="content__exterior4--item__desc">Cốp xe Grand i10 được trang bị đèn chiếu sáng, giúp bạn dễ dàng lấy hoặc sắp đặt hành lí trong điều kiện ánh sáng không tốt hoặc vào ban đêm.</div>
+              </div>
+              <div class="content__exterior4--item l-4 m-4">
+                <img src="./assets/img-detail/tien7.jpg" alt="" class="content__exterior4--item__img">
+                <div class="content__exterior4--item__title">Vô lăng chỉnh hướng</div>
+                <div class="content__exterior4--item__desc">Vô lăng của <span>Hyundai Grand i10</span> có khả năng điều chỉnh 4 hướng, giúp người lái dễ dàng tìm được tư thế thỏa mái nhất. Tay lái của xe cũng được tích hợp nút điều khiển chức năng làm tăng tính tiện nghi, an toàn và thuận tiện.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="container__img">
+          <div class="container__register">
+            <div class="container__register--title">Đăng ký để nhận tin từ Hyundai An Phú</div>
+            <input placeholder="Nhập địa chỉ Email" type="text" class="container__register--input">
+            <div class="container__register--btn">Gửi</div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="footer__detail">
+          <div class="footer__detail--item l-3-22 m-6 c-12">
+            <img src="./assets/img/daily-logo-footer.png" alt="" class="footer__detail--item__image">
+            <div class="footer__detail--item__desc">Hyundai An Phú - Đại lý ủy quyền chính thức của Hyundai Thành Công là địa điểm trưng bày các dòng xe mới nhất của Hyundai.</div>
+            <div class="footer__detail--item__desc">Tọa lạc tại trung tâm Thành Phố Hồ Chí Minh với các Showroom chuẩn 1S, 2S hiện đại, cùng đội ngũ chuyên viên tư vấn giàu kinh nghiệm.</div>
+            <div class="footer__detail--item__desc">Hyundai An Phú mang sứ mệnh phục vụ khách hàng trên Toàn quốc, giúp khách hàng có những trải nghiệm ấn tượng về sản phẩm - dịch vụ cao cấp của chúng tôi.</div>
+            <div class="footer__detail--item__desc">Liên hệ ngay để được tư vấn và nhận các chương trình ưu đãi hấp dẫn</div>
+          </div>
+          <div class="footer__detail--item l-3-22 m-6 c-12">
+            <div class="footer__detail--item__heading">HÌNH ẢNH</div>
+            <div class="footer__detail--item__bottom">
+              <img src="./assets/img/181218_Gioi-thieu-showroom.jpg" alt="" class="footer__detail--item__img">
+            </div>
+          </div>
+          <div class="footer__detail--item l-3-22 m-6 c-12">
+            <div class="footer__detail--item__heading">BÀI VIẾT GẦN ĐÂY</div>
+            <div class="footer__detail--item__bottom">
+              <div class="footer__detail--item__post">
+                <img src="./assets/img/C57D07CF-47D0-4268-9BFB-A653AD5C29AC-min.jpg" alt="" style="min-width: 9.4rem; min-height: 5.5rem;" class="footer__detail--item__post--img">
+                <div class="footer__detail--item__post--desc">
+                  <div class="footer__detail__post--title">
+                    🚘 CHƯƠNG TRÌNH GIA HẠN BẢO HÀNH “H...
+                  </div>
+                  <div class="footer__detail--item__post--time">17/04/2020</div>
+                </div>
+              </div>
+              <div class="footer__detail--item__post">
+                <img src="./assets/img/IMG_8281-min.jpg" alt="" style="min-width: 9.4rem; min-height: 5.5rem;" class="footer__detail--item__post--img">
+                <div class="footer__detail--item__post--desc">
+                  <div class="footer__detail__post--title">
+                    🔥 KHỞI SẮC ROADSHOW THÁNG 06 TẠI H...
+                  </div>
+                  <div class="footer__detail--item__post--time">13/06/2020</div>
+                </div>
+              </div>
+              <div class="footer__detail--item__post">
+                <img src="./assets/img/Post Web-01.jpg" alt="" style="max-width: 9.4rem; min-height: 5.5rem;" class="footer__detail--item__post--img">
+                <div class="footer__detail--item__post--desc">
+                  <div class="footer__detail__post--title">
+                    🏆 ĐÓN XE SANG CÙNG HYUNDAI AN PHÚ ...
+                  </div>
+                <div class="footer__detail--item__post--time">12/06/2020</div>
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="footer__detail--item l-3-22 m-6 c-12">
+            <div class="footer__detail--item__heading">FACEBOOK</div>
+            <div class="footer__detail--item__bottom"></div>
+          </div>
+        </div>
+        <div class="footer__address">
+          <div class="footer__address--item l-4-30 m-4-33 c-12">
+            <div class="footer__address--item__icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="footer__address--item__info">Showroom 2S: 1052 Nguyễn Văn Linh, P.Tân Phong, Quận 7, TP.HCM</div>
+          </div>
+          <div class="footer__address--item l-4-30 m-4-33 c-12">
+            <div class="footer__address--item__icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="footer__address--item__info">Showroom 1S: 5A Nguyễn Thị Minh Khai, P.Bến Nghé, Quận 1, TP.HCM</div>
+          </div>
+          <div class="footer__address--item l-4-30 m-4-33 c-12">
+            <div class="footer__address--item__icon"><i class="fas fa-envelope"></i></div>
+            <div class="footer__address--item__info"> info@anphuhyundai.com.vn</div>
+          </div>
+        </div>
+        <div class="footer__copyright">COPYRIGHT ©IDOCNET 2018</div>
+      </div>
+    </div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

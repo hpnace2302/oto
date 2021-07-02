@@ -1,0 +1,18 @@
+:root{
+  --primary-color: #E0985D;
+  --background-color1: #fff;
+  --background-color2: #272D3A;
+  --background-color3: #1d71d3;
+  --text-color1: #333;
+  --text-color2: #1d71d3;
+  --text-color3: #fff;
+
+  --header-height: 5.6rem;
+}
+
+.header__nav--item.active {
+  border-bottom: 2px solid #0E528B;
+}
+.content__nav--product__item--name.active {
+  color: var(--primary-color);
+}
