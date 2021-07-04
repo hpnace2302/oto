@@ -37,15 +37,15 @@
     margin: 3rem 0 0;
     padding: 0 0 9rem 0;
   }
-  .content__slider--detail__img {
+  .content__slide--detail__img {
     width: 60%;
     height: 80%;
     margin-top: var(--header-height);
   }
-  .content__slider--detail__desc {
+  .content__slide--detail__desc {
     width: 40%;
   }
-  .content__slider--detail__desc--info div {
+  .content__slide--detail__desc--info div {
     margin-left: 2rem;
   }
   .nav1 {
@@ -54,7 +54,7 @@
     left: 0;
     width: 100%;
   }
-  .content__slider--control {
+  .content__slide--control {
     width: 100%;
     /* justify-content: space-around; */
   }
@@ -75,7 +75,7 @@
     margin: 0;
     padding: 0 0.5rem;
   }
-  .content__slider--control__item {
+  .content__slide--control__item {
     margin: 0 2rem;
   }
   .content__highlights--desgin4__title {
@@ -89,6 +89,15 @@
   }
   .content__operate--details,.content__safe--item {
     padding: 0 1.5rem;
+  }
+  .content__slide--evaluete__list {
+    margin-top: 4rem;
+  }
+  .content__slide--picture__control--list {
+    padding-top: 6rem;
+  }
+  .content__slide--parameter__specification {
+    margin-top: 4.6rem;
   }
 }
 
@@ -115,22 +124,22 @@
   .footer__detail--item__heading {
     margin-top: 2rem;
   }
-  .content__slider--nav__item {
+  .content__slide--nav__item {
     width: 100%;
     padding: 1rem 0.5rem 0;
     margin: 0;
     font-size:1rem;
     text-align:center;
   }
-  .content__slider--detail {
+  .content__slide--detail {
     display:block;
   }
-  .content__slider--detail__desc {
+  .content__slide--detail__desc {
     width: 100%;
     text-align:center;
   }
-  .content__slider--detail__desc--btn,
-  .content__slider--detail__img {
+  .content__slide--detail__desc--btn,
+  .content__slide--detail__img {
     margin: 2rem auto;
   }
   .content__exterior--bg,
@@ -183,5 +192,44 @@
   }
   .content__operate--details__left {
     margin-top: 0;
+  }
+  .content__slide--detail {
+    flex-wrap: wrap;
+    height: 100%;
+    /* width: 70%; */
+  }
+  .content__slide--fell360,.content__slide--picture,.content__slide--evaluate,.content__slide--parameter,.content__slide--detail {
+    height: 50rem;
+  }
+  .content__slide--detail__img {
+    width: 70%;
+    /* margin: 0; */
+    height: 15rem;
+    margin: 0 auto;
+  }
+  .content__slide--detail__desc {
+    padding: 5rem 0 0;
+    font-weight: 600;
+  }
+  .content__slide--detail__desc--info {
+    line-height:1;
+  }
+  .content__slide--detail__desc--title {
+    margin-top: 1rem;
+  }
+  .content__slide--picture__control--list {
+    padding-top: 3rem;
+  }
+  .content__slide--evaluete__list {
+    padding-top: 4rem;
+  }
+  .content__slide--picture {
+    /* margin-bottom: 0; */
+  }
+  .content__slide--fell360__color {
+    margin-top: 20rem;
+  }
+  .content__slide--parameter__specification {
+    margin-top: 4rem;
   }
 }
