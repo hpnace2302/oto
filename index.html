@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="./assets/css-index/grid.css">
     <link rel="stylesheet" href="./assets/css-index/style.css">
     <link rel="stylesheet" href="./assets/css-index/base.css">
-    <link rel="stylesheet" href="./assets/css-index/responsive.css">
+    <link rel="stylesheet" href="./assets/css-detail/responsive.css">
     <!-- reset css -->
     <style>
       html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {  margin: 0;  padding: 0;  border: 0;  font-size: 100%;  font: inherit;  vertical-align: baseline;}
@@ -36,12 +36,28 @@
         <img src="./assets/img/youtube.PNG" alt="" class="social__item">
         <img src="./assets/img/fb.PNG" alt="" class="social__item">
       </div>
-      <div class="phone">
+      <!-- <div class="phone">
         <div class="phone__icon">
           <i class="fas fa-phone"></i>
         </div>
         <div class="phone__number">0123456789</div>
-      </div>
+      </div> -->
+      <div class="hotline-phone-ring-wrap">
+        <div class="hotline-phone-ring">
+            <div class="hotline-phone-ring-circle"></div>
+            <div class="hotline-phone-ring-circle-fill"></div>
+            <div class="hotline-phone-ring-img-circle">
+            <a href="tel:0123456789" class="pps-btn-img">
+                <img src="https://nocodebuilding.com/wp-content/uploads/2020/07/icon-call-nh.png" alt="Gọi điện thoại" width="50">
+            </a>
+            </div>
+        </div>
+        <div class="hotline-bar">
+            <a href="tel:0123456789">
+                <span style="color: #fff" class="text-hotline">0123 456 789</span>
+            </a>
+        </div>
+    </div>
       <div class="regist_make-app">
         <div class="regist">
           <a href="#" class="regist__link">Đăng ký lái thử</a>
@@ -55,6 +71,19 @@
           <div class="scroll-top__title">Về đầu trang</div>
           <div class="scroll-top__icon"><i class="fas fa-arrow-up"></i></div>
         </a>
+      </div>
+      <div class="chat">
+        <div class="chat__header">
+          <div class="chat__header--title">Chat với chúng tôi</div>
+          <div class="chat__header--btn"><i class="fas fa-minus"></i></div>
+        </div>
+        <div class="chat__body">
+          <input type="text" class="chat__body--input" placeholder="Mời bạn nhập Tên">
+          <input type="email" class="chat__body--input" placeholder="Mời bạn nhập Email">
+          <input type="number" class="chat__body--input" placeholder="Mời bạn nhập Số điện thoại">
+          <input type="text" class="chat__body--input" placeholder="Mời bạn nhập câu hỏi?">
+          <div class="chat__body--btn">Gửi tin nhắn</div>
+        </div>
       </div>
       <div class="grid">
         <div class="header">
@@ -117,7 +146,11 @@
           </div>
           <img src="./assets/img/daily-logo.png" alt="" class="header__right">
           <div class="header__mb-tl">
-            <div class="header__mb-tl__icon" onclick="toggleFunction()"><i class="fas fa-bars"></i></div>
+            <div class="header__mb-tl1">
+              <img src="./assets/img/daily-logo.png" alt="" class="header__mb-tl__logo">
+              <!-- <div class="header__mt-tl__phonenumber">0123456789</div> -->
+              <div class="header__mb-tl__icon" onclick="toggleFunction()"><i class="fas fa-bars"></i></div>
+            </div>
             <ul class="header__mb-tl__nav--list">
               <li class="header__mb-tl__nav--item">
                 <div class="header__mb-tl__nav--item__name">
@@ -125,7 +158,7 @@
                 </div>
               </li>
               <li class="header__mb-tl__nav--item">
-                <div class="header__mb-tl__nav--item__name"  onclick="toggleFunction2()">
+                <div class="header__mb-tl__nav--item__name">
                   <p>Sản phẩm</p>
                   <i class="fas fa-sort-down"></i>
                 </div>
@@ -137,7 +170,7 @@
                 </ul>
               </li>
               <li class="header__mb-tl__nav--item">
-                <div class="header__mb-tl__nav--item__name">
+                <div class="header__mb-tl__nav--item__name" >
                   <p>Tin tức</p>
                   <i class="fas fa-sort-down"></i>
                 </div>
@@ -152,7 +185,7 @@
                 </ul>
               </li>
               <li class="header__mb-tl__nav--item">
-                <div class="header__mb-tl__nav--item__name">
+                <div class="header__mb-tl__nav--item__name" >
                   <p>Dịch vụ</p>
                   <i class="fas fa-sort-down"></i>
                 </div>
@@ -164,7 +197,7 @@
                 </ul>
               </li>
               <li class="header__mb-tl__nav--item">
-                <div class="header__mb-tl__nav--item__name">
+                <div class="header__mb-tl__nav--item__name" >
                   <p>Đăng ký lái thử</p>
                   <i class="fas fa-sort-down"></i>
                 </div>
@@ -174,7 +207,7 @@
                 </ul>
               </li>
               <li class="header__mb-tl__nav--item">
-                <div class="header__mb-tl__nav--item__name">
+                <div class="header__mb-tl__nav--item__name" >
                   <p>Mua xe</p>
                   <i class="fas fa-sort-down"></i>
                 </div>
@@ -189,9 +222,6 @@
                 <div class="header__mb-tl__nav--item__name">
                   <p>Liên hệ</p>
                 </div>
-              </li>
-              <li class="header__mb-tl__nav--item">
-                <img src="./assets/img/daily-logo.png" alt="" class="header__mb-tl__logo">
               </li>
             </ul>
           </div>

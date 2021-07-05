@@ -1,14 +1,20 @@
+@media screen and (max-width: 1279px) {
+  .header__right {
+    display: none
+  }
+}
+@media screen and (max-width: 1050px) {
+  .header__logo {
+    display:none;
+  }
+}
+
+
 /* Mobile & Tablet */
 @media (max-width : 1023px) {
   .scroll-top,.social,.regist_make-app,.header__left,.header__right {
     display:none;
   }
-  .header__mb-tl__icon {
-    display:block;
-  }
-  /* .w3-show {
-    display:block;
-  } */
   .header {
     position:fixed;
     background-color: var(--background-color1);
@@ -61,6 +67,25 @@
   .content__exterior--img {
     margin-top: 2rem;
   }
+  .header__mb-tl1 {
+    display: flex;
+    height: 100%;
+  }
+  .header__mb-tl__nav--list {
+    margin-top: 1rem;
+  }
+  .content__slide--fell360__img {
+    margin: 0;
+  }
+  .content__slide--fell360,.content__slide {
+    overflow: hidden;
+  }
+  .icon__mobile {
+    display: block;
+  }
+  .chat__header--btn {
+    display: none;
+  }
 }
 /* Tablet */
 @media (min-width : 740px ) and (max-width : 1023px) {
@@ -98,6 +123,14 @@
   }
   .content__slide--parameter__specification {
     margin-top: 4.6rem;
+  }
+  .header__mt-tl__phonenumber {
+    font-size:3rem;
+    font-weight: 600;
+    margin-right: 38%;
+  }
+  .content__product--item {
+    height: 40rem;
   }
 }
 
@@ -231,5 +264,13 @@
   }
   .content__slide--parameter__specification {
     margin-top: 4rem;
+  }
+  .header__mt-tl__phonenumber {
+    font-size:2rem;
+    font-weight: 600;
+    margin-right: 35%;
+  }
+  .chat {
+    width: 25rem;
   }
 }

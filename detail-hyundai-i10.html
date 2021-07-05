@@ -36,12 +36,6 @@
         <img src="./assets/img/youtube.PNG" alt="" class="social__item">
         <img src="./assets/img/fb.PNG" alt="" class="social__item">
       </div>
-      <!-- <div class="phone">
-        <div class="phone__icon">
-          <i class="fas fa-phone"></i>
-        </div>
-        <div class="phone__number">0123456789</div>
-      </div> -->
       <div class="hotline-phone-ring-wrap">
         <div class="hotline-phone-ring">
             <div class="hotline-phone-ring-circle"></div>
@@ -71,6 +65,20 @@
           <div class="scroll-top__title">Về đầu trang</div>
           <div class="scroll-top__icon"><i class="fas fa-arrow-up"></i></div>
         </a>
+      </div>
+      <div class="chat">
+        <div class="chat__header">
+          <i class="far fa-comments icon__mobile"></i>
+          <div class="chat__header--title">Chat với chúng tôi</div>
+          <div class="chat__header--btn"><i class="fas fa-minus"></i></div>
+        </div>
+        <div class="chat__body">
+          <input type="text" class="chat__body--input" placeholder="Mời bạn nhập Tên">
+          <input type="email" class="chat__body--input" placeholder="Mời bạn nhập Email">
+          <input type="number" class="chat__body--input" placeholder="Mời bạn nhập Số điện thoại">
+          <input type="text" class="chat__body--input" placeholder="Mời bạn nhập câu hỏi?">
+          <div class="chat__body--btn">Gửi tin nhắn</div>
+        </div>
       </div>
       <div class="grid">
         <div class="header">
@@ -133,7 +141,11 @@
           </div>
           <img src="./assets/img/daily-logo.png" alt="" class="header__right">
           <div class="header__mb-tl">
-            <div class="header__mb-tl__icon" onclick="toggleFunction()"><i class="fas fa-bars"></i></div>
+            <div class="header__mb-tl1">
+              <img src="./assets/img/daily-logo.png" alt="" class="header__mb-tl__logo">
+              <!-- <div class="header__mt-tl__phonenumber">0123456789</div> -->
+              <div class="header__mb-tl__icon" onclick="toggleFunction()"><i class="fas fa-bars"></i></div>
+            </div>
             <ul class="header__mb-tl__nav--list">
               <li class="header__mb-tl__nav--item">
                 <div class="header__mb-tl__nav--item__name">
@@ -141,7 +153,7 @@
                 </div>
               </li>
               <li class="header__mb-tl__nav--item">
-                <div class="header__mb-tl__nav--item__name"  onclick="toggleFunction2()">
+                <div class="header__mb-tl__nav--item__name">
                   <p>Sản phẩm</p>
                   <i class="fas fa-sort-down"></i>
                 </div>
@@ -153,7 +165,7 @@
                 </ul>
               </li>
               <li class="header__mb-tl__nav--item">
-                <div class="header__mb-tl__nav--item__name">
+                <div class="header__mb-tl__nav--item__name" >
                   <p>Tin tức</p>
                   <i class="fas fa-sort-down"></i>
                 </div>
@@ -168,7 +180,7 @@
                 </ul>
               </li>
               <li class="header__mb-tl__nav--item">
-                <div class="header__mb-tl__nav--item__name">
+                <div class="header__mb-tl__nav--item__name" >
                   <p>Dịch vụ</p>
                   <i class="fas fa-sort-down"></i>
                 </div>
@@ -180,7 +192,7 @@
                 </ul>
               </li>
               <li class="header__mb-tl__nav--item">
-                <div class="header__mb-tl__nav--item__name">
+                <div class="header__mb-tl__nav--item__name" >
                   <p>Đăng ký lái thử</p>
                   <i class="fas fa-sort-down"></i>
                 </div>
@@ -190,7 +202,7 @@
                 </ul>
               </li>
               <li class="header__mb-tl__nav--item">
-                <div class="header__mb-tl__nav--item__name">
+                <div class="header__mb-tl__nav--item__name" >
                   <p>Mua xe</p>
                   <i class="fas fa-sort-down"></i>
                 </div>
@@ -205,9 +217,6 @@
                 <div class="header__mb-tl__nav--item__name">
                   <p>Liên hệ</p>
                 </div>
-              </li>
-              <li class="header__mb-tl__nav--item">
-                <img src="./assets/img/daily-logo.png" alt="" class="header__mb-tl__logo">
               </li>
             </ul>
           </div>
@@ -232,7 +241,12 @@
             </div>
             <div class="content__slide--fell360">
               <div class="content__slide--fell360__title">Ngoại thất</div>
-              <img src="./assets/img-detail/es_0.png" alt="" class="content__slide--fell360__img">
+              <div class="content__slide--fell360__img" id="product">
+                <img id="product-img" src="./assets/img-detail/img-360/es_00.png" alt="" style="cursor: move;" class="content__slide--fell360__img360">
+              </div>
+              <div class="content__slide--fell360__img" id="product">
+                <img id="product-img" src="./assets/img-detail/ototrang/es_00.png" alt="" style="cursor: move;" class="content__slide--fell360__img360">
+              </div>
               <div class="content__slide--fell360__color">
                 <div class="content__slide--fell360__color--pick">
                   <div class="content__slide--fell360__color--pick__name">Cát</div>
@@ -1348,6 +1362,39 @@
         <div class="footer__copyright">COPYRIGHT ©IDOCNET 2018</div>
       </div>
     </div>
-    <script src="./js/main.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/@3dweb/360javascriptviewer/lib/JavascriptViewer.min.js"></script>
+    <script type="application/javascript">
+      // const btn360 = document.querySelectorAll('.content__slide--fell360__btn')
+      // btn360[0].onclick = () => {
+        window.addEventListener('load', () => {
+        const jsv = new JavascriptViewer({ 
+          mainHolderId: 'product',
+          mainImageId: 'product-img',
+          imageUrlFormat: 'es_xx.png',
+          // imageUrlFormat: 'img-detail/ototrang/es_xx.png',
+          totalFrames:  35,
+          defaultProgressBar:  true,
+          speed: 90,
+          inertia: 12,
+          reverse:true,
+          // zoom:true,
+          autoRotate:1,
+          notificationConfig:{
+            dragToRotate:{
+              showStartToRotateDefaultNotification:true,
+              mainColor:"rgba(0,0,0,0.20)",
+              textColor:"rgba(243,237,237,0.80)",
+            }
+          }});
+  
+          jsv.start()
+          .then(() => console.log('viewer started'))
+          .catch((e) => console.log('failed loading 360 viewer: ' + e))
+        });
+      // }
+    </script>
+    <script src="./js/detail.js"></script>
   </body>
 </html>
