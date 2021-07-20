@@ -195,7 +195,7 @@
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid #C0C8C9;
+  /* border-bottom: 1px solid #C0C8C9; */
 }
 .header__left {
   display: flex;
@@ -406,6 +406,7 @@
   text-transform:uppercase;
   font-weight: 600;
   cursor: pointer;
+  text-align: center;
 }
 .content__slide--detail__desc--btn:hover {
   background-color: var(--primary-color);

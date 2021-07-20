@@ -143,7 +143,6 @@ btnControl[4].onclick = () => {
 const colorBtn = $$('.content__slide--fell360__color--item')
 const colorPick = $('.content__slide--fell360__color--pick__img')
 const oto = $$('.content__slide--fell360__img')
-console.log(oto)
 
 let cat = './assets/img-detail/ex_Sepia_topaz.png'
 let trang = './assets/img-detail/ex_Noble_White.png'
@@ -152,36 +151,59 @@ let bac = './assets/img-detail/ex_Sleek_Silver.png'
 let den = './assets/img-detail/ex_Night_Sky.png'
 let otocat = './assets/img-detail/img-360/es_00.png'
 let ototrang = './assets/img-detail/ototrang/es_00.png'
-let otored = './assets/img-detail/es_0 (2).png'
+let otored = './assets/img-detail/otodo/webdemo.netdeal.vn (4)/es_00.png'
 let otobac = './assets/img-detail/es_0 (3).png'
 let otoden = './assets/img-detail/es_0 (4).png'
 
 colorBtn[0].onclick = function () {
   colorPick.src = cat
-  // oto.src = otocat
+  oto.src = otocat
   oto[0].style.display = 'block'
   oto[1].style.display = 'none'
-  // oto[2].style.display = 'none'
-  // oto[3].style.display = 'none'
-  // oto[4].style.display = 'none'
+  oto[2].style.display = 'none'
+  oto[3].style.display = 'none'
+  oto[4].style.display = 'none'
+  $('.content__slide--fell360__color--pick__name').innerText = 'Cát'
 }
 colorBtn[1].onclick = function () {
   colorPick.src = trang
-  // oto.src = ototrang
+  oto.src = ototrang
   oto[0].style.display = 'none'
   oto[1].style.display = 'block'
+  oto[2].style.display = 'none'
+  oto[3].style.display = 'none'
+  oto[4].style.display = 'none'
+  $('.content__slide--fell360__color--pick__name').innerText = 'Trắng'
 }
 colorBtn[2].onclick = function () {
   colorPick.src = red
   oto.src = otored
+  oto[0].style.display = 'none'
+  oto[1].style.display = 'none'
+  oto[2].style.display = 'block'
+  oto[3].style.display = 'none'
+  oto[4].style.display = 'none'
+  $('.content__slide--fell360__color--pick__name').innerText = 'Đỏ'
 }
 colorBtn[3].onclick = function () {
   colorPick.src = bac
   oto.src = otobac
+  oto[0].style.display = 'none'
+  oto[1].style.display = 'none'
+  oto[2].style.display = 'none'
+  oto[3].style.display = 'block'
+  oto[4].style.display = 'none'
+  $('.content__slide--fell360__color--pick__name').innerText = 'Bạc'
 }
 colorBtn[4].onclick = function () {
   colorPick.src = den
   oto.src = otoden
+  oto[0].style.display = 'none'
+  oto[1].style.display = 'none'
+  oto[2].style.display = 'none'
+  oto[3].style.display = 'none'
+  oto[4].style.display = 'block'
+  $('.content__slide--fell360__color--pick__name').innerText = 'Xanh'
 }
 
 // xử lý ẩn hiện subnav mobile
@@ -225,3 +247,4 @@ chatHeader.onclick = () => {
     $('.chat__body').style.display = 'none'
   }
 }
+

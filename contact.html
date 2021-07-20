@@ -16,9 +16,11 @@
     />
     <link rel="stylesheet" href="./assets/font-awesome/css/fontawesome-all.min.css">
     <link rel="stylesheet" href="./assets/grid.css">
-    <link rel="stylesheet" href="./assets/css-index/style.css">
-    <link rel="stylesheet" href="./assets/css-index/base.css">
-    <link rel="stylesheet" href="./assets/css-detail/responsive.css">
+    <link rel="stylesheet" href="./assets/css-contact/style.css">
+    <link rel="stylesheet" href="./assets/base.css">
+    <link rel="stylesheet" href="./assets/css-contact/responsive.css">
+    <link rel='stylesheet' type='text/css' href='https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.5.0/maps/maps.css'>
+    <script onload="mapContent();" src="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.5.0/maps/maps-web.min.js" defer></script>
     <!-- reset css -->
     <style>
       html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {  margin: 0;  padding: 0;  border: 0;  font-size: 100%;  font: inherit;  vertical-align: baseline;}
@@ -28,6 +30,26 @@
     <!-- base style -->
     <style>*,*:before,*:after {  box-sizing: border-box;}/* using rem unit */html {  font-size: 62.5%;scroll-behavior: smooth;}a {  text-decoration: none;}img {  display: block;  max-width: 100%;}body {  font-family: 'Chakra Petch', sans-serif;  font-size: 16px;  line-height: 1;}input,button,textarea,select {  outline: none;  font-family: 'Chakra Petch', sans-serif;  font-size: 16px;  line-height: 1;}input {  line-height: normal;}button {  cursor: pointer;}
     </style>
+    <style>
+      #map {
+        height: 500px;
+        width: 100%;
+      }
+      
+      @media only screen and (max-width: 767px) {
+        #map {
+          height: 300px;
+        }
+      }
+      
+      #marker {
+        background-image: url('/wp-content/uploads/2021/04/copywriter-logo-dark.svg');
+        background-size: cover;
+        width: 30px;
+        height: 30px;
+      }
+      
+      </style>
   </head>
   <body>
     <div id="home"></div>
@@ -222,54 +244,48 @@
         </div>
       </div>
       <div class="content">
-        <div class="grid wide">
-          <div class="content__nav--product__list">
-            <div class="content__nav--product__item l-3 c-6 m-6">
-              <img src="./assets/img/pro-cate-1.png" alt="" class="content__nav--product__item--img">
-              <div class="content__nav--product__item--name active">Xe du lịch</div>
+        <img src="http://webdemo.netdeal.vn:12071/Images/CSKH.jpg" alt="" class="contact__img">
+        <div class="contact__name">Hyundai An Phú</div>
+        <div class="contact__detail">
+          <p>Showroom 2S: 1052 Nguyễn Văn Linh, P.Tân Phong, Quận 7, TP.HCM</p>
+          <p>Showroom 1S: 5A Nguyễn Thị Minh Khai, P.Bến Nghé, Quận 1, TP.HCM</p>
+          <p>Hotline: 098 134 1111</p>
+          <p>Email: <span>info@anphuhyundai.com.vn</span></p>
+        </div>
+        <div class="contact__map">
+          <div style="margin-bottom: 5rem" id="map"></div>
+        </div>
+        <div class="contact__form">
+          <div class="contact__form--list l-6">
+            <div class="contact__form--item">
+              <div class="contact__form--item__title">Họ tên</div>
+              <input type="text" class="contact__form--item__input" placeholder="Họ và tên">
             </div>
-            <div class="content__nav--product__item l-3 c-6 m-6">
-              <img src="./assets/img/pro-cate-1.png" alt="" class="content__nav--product__item--img">
-              <div class="content__nav--product__item--name">Xe SUV</div>
+            <div class="contact__form--item">
+              <div class="contact__form--item__title">Số điện thoại</div>
+              <input type="text" class="contact__form--item__input" placeholder="Nhập số điện thoại">
             </div>
-            <div class="content__nav--product__item l-3 c-6 m-6">
-              <img src="./assets/img/pro-cate-1.png" alt="" class="content__nav--product__item--img">
-              <div class="content__nav--product__item--name">Xe thương mại</div>
+            <div class="contact__form--item">
+              <div class="contact__form--item__title">Email</div>
+              <input type="text" class="contact__form--item__input" placeholder="Nhập Email">
             </div>
-            <div class="content__nav--product__item l-3 c-6 m-6">
-              <img src="./assets/img/pro-cate-1.png" alt="" class="content__nav--product__item--img">
-              <div class="content__nav--product__item--name">Limousine An Phú</div>
+            <div class="contact__form--item">
+              <div class="contact__form--item__title">Địa chỉ</div>
+              <input type="text" class="contact__form--item__input" placeholder="Nhập địa chỉ">
             </div>
           </div>
-          <div class="content__product--list">
-            <div class="content__product--item l-3 c-6 m-6">
-              <a href="./detail-hyundai-i10.html" class="content__product--link">
-                <img src="./assets//img/grand-i10.png" alt="Grand i10" class="content__product--img">
-              <div class="content__product--name">Grand i10</div>
-              </a>
+          <div class="contact__form--list l-6">
+            <div class="contact__form--item">
+              <div class="contact__form--item__title">Tiêu đề</div>
+              <input type="text" class="contact__form--item__input" placeholder="Nhập tiêu đề">
             </div>
-            <div class="content__product--item l-3 c-6 m-6">
-              <img src="./assets/img/grand-i10-sedan.png" alt="Grand i10 sedan" class="content__product--img">
-              <div class="content__product--name">Grand i10 sedan</div>
-            </div>
-            <div class="content__product--item l-3 c-6 m-6">
-              <img src="./assets/img/elantra.png" alt="Elantra" class="content__product--img">
-              <div class="content__product--name">Elantra</div>
-            </div>
-            <div class="content__product--item l-3 c-6 m-6">
-              <img src="./assets/img/Elantra-Sport.png" alt="Elantra Sport" class="content__product--img">
-              <div class="content__product--name">Elantra Sport</div>
-            </div>
-            <div class="content__product--item l-3 c-6 m-6">
-              <img src="./assets/img/accent.png" alt="Accent" class="content__product--img">
-              <div class="content__product--name">Accent</div>
-            </div>
-            <div class="content__product--item l-3 c-6 m-6">
-              <img src="./assets/img/Elantra_2019.png" alt="Elantra 2019" class="content__product--img">
-              <div class="content__product--name">Elantra 2019</div>
+            <div class="contact__form--item">
+              <div class="contact__form--item__title">Nội dung</div>
+              <input type="text" class="contact__form--item__input" placeholder="Nhập nội dung">
             </div>
           </div>
         </div>
+        <div class="contact__submit">Gửi</div>
       </div>
       <div class="container">
         <div class="container__img">
@@ -353,6 +369,46 @@
     </div>
     <script src="./js/main.js"></script>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v11.0" nonce="x25ps3wk"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
+    <script>
+      function mapContent(){
+        var api_key = 'YYlh5xnKI1ZiIgLGaD34t4DEamotWb0e';
+        var latAndLong = {lat: 21.01807, lng: 105.81118}; 
+        var zoomLevel = 14;
+        var yourAddress = '27 Huỳnh Thúc Kháng';
+    
+        var map = tt.map({
+            container: 'map',
+            key: api_key,
+            center: latAndLong,
+            zoom: zoomLevel
+        });
+    
+        var marker = new tt.Marker().setLngLat(latAndLong).addTo(map);
+         
+         // FOR CUSTOM MARKER
+        //var customMarker = document.createElement('div');
+        //customMarker.id = 'marker';
+        //var marker = new tt.Marker({element: customMarker}).setLngLat(latAndLong).addTo(map);
+    
+        var popupOffsets = {
+          top: [0, 0],
+          bottom: [0, -70],
+          'bottom-right': [0, -70],
+          'bottom-left': [0, -70],
+          left: [25, -35],
+          right: [-25, -35]
+        }
+    
+        var popup = new tt.Popup({offset: popupOffsets}).setHTML(yourAddress);
+          marker.setPopup(popup).togglePopup();
+    
+        }
+    
+    </script>
   </body>
 </html>
 

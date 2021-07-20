@@ -368,59 +368,10 @@
 /* End CSS Header Mobile Tablet */
 /* End CSS Header */
 
-
 /* CSS Content */
-.content {
-  margin-top: 5.5rem;
-}
-.content__nav--product__list {
-  display:flex;
-  flex-wrap: wrap;
-  border-bottom: 1px solid #333;
-}
-.content__nav--product__item {
-  display:flex;
-  width: 100%;
-  height: 7rem;
-  padding: 0.5rem;
-}
-.content__nav--product__item--img {
-  width: 4.8rem;
-  height: 3rem;
-  margin: auto 0;
-}
-.content__nav--product__item--name {
-  margin: auto 1rem;
-  font-weight: 700;
-  color: var(--text-color2);
-  font-size:1.4rem;
-}
-.content__product--list {
-  display:flex;
-  flex-wrap: wrap;
-  margin-top: 2rem;
-}
-.content__product--item {
-  margin-bottom: 2rem;
-  padding-left: 1.5rem;
-  width: 25%;
-  height: 21rem;
-  position: relative;
-  text-align: center;
-  cursor: pointer;
-}
-.content__product--img:hover {
-  transform: scale(1.1);
-}
-.content__product--img {
-  transition: 0.6s ease;
-}
-.content__product--name {
-  bottom: 3rem;
-  font-weight: 600;
-  font-size: 1.4rem;
-}
-/* End CSS Content */
+/* End Content */
+
+
 /* CSS Container */
 .container {
 

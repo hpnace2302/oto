@@ -4,10 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title></title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title></title><link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -17,7 +16,7 @@
     <link rel="stylesheet" href="./assets/font-awesome/css/fontawesome-all.min.css">
     <link rel="stylesheet" href="./assets/css-detail/style.css">
     <link rel="stylesheet" href="./assets/css-detail/base.css">
-    <link rel="stylesheet" href="./assets/css-detail/grid.css">
+    <link rel="stylesheet" href="./assets/grid.css">
     <link rel="stylesheet" href="./assets/css-detail/responsive.css">
     <!-- reset css -->
     <style>
@@ -26,10 +25,14 @@
       footer, header, hgroup, menu, nav, section {display: block;}body {line-height: 1;}ol, ul {list-style: none;}blockquote, q {quotes: none;}blockquote:before, blockquote:after,q:before, q:after {content: '';content: none;}table {border-collapse: collapse;border-spacing: 0;}
     </style>
     <!-- base style -->
-    <style>*,*:before,*:after {  box-sizing: border-box;}/* using rem unit */html {  font-size: 62.5%;scroll-behavior: smooth;}a {  text-decoration: none;}img {  display: block;  max-width: 100%;}body {  font-family: 'Open Sans', sans-serif;  font-size: 16px;  line-height: 1;}input,button,textarea,select {  outline: none;  font-family: 'Open Sans', sans-serif;  font-size: 16px;  line-height: 1;}input {  line-height: normal;}button {  cursor: pointer;}
+    <style>*,*:before,*:after {  box-sizing: border-box;}/* using rem unit */html {  font-size: 62.5%;scroll-behavior: smooth;}a {  text-decoration: none;}img {  display: block;  max-width: 100%;}body {  font-family: 'Chakra Petch', sans-serif;  font-size: 16px;  line-height: 1;}input,button,textarea,select {  outline: none;  font-family: 'Chakra Petch', sans-serif;  font-size: 16px;  line-height: 1;}input {  line-height: normal;}button {  cursor: pointer;}
     </style>
   </head>
   <body>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+        
+    <script type="text/javascript" src="https://res.cloudinary.com/dewn0wy2s/raw/upload/v1592669623/jquery.threesixty_envo5d.js"></script>
+  
     <div id="home"></div>
     <div class="wrapper">
       <div class="social">
@@ -80,62 +83,62 @@
           <div class="chat__body--btn">Gửi tin nhắn</div>
         </div>
       </div>
-      <div class="grid">
+      <div class="grid border__bottom">
         <div class="header">
           <div class="header__left">
             <img src="./assets/img/hyundai-logo.png" alt="" class="header__logo">
             <ul class="header__nav">
               <li class="header__nav--item">
-                <a href="#" class="header__nav--link">Giới thiệu</a>
+                <a href="./intro.html" class="header__nav--link">Giới thiệu</a>
               </li>
               <li class="header__nav--item active">
-                <a href="" class="header__nav--link">Sản phẩm</a>
+                <a href="./index.html" class="header__nav--link">Sản phẩm</a>
                 <ul class="header__nav--item__subnav">
-                  <li class="header__nav--item__subnav--item">Xe du lịch</li>
-                  <li class="header__nav--item__subnav--item">Xe SUV</li>
-                  <li class="header__nav--item__subnav--item">Xe thương mại</li>
-                  <li class="header__nav--item__subnav--item">Limousine An Phú</li>
+                  <li class="header__nav--item__subnav--item"><a href="./detail-hyundai-i10.html">Xe du lịch</a></li>
+                  <li class="header__nav--item__subnav--item"><a href="./detail-hyundai-i10.html">Xe SUV</a></li>
+                  <li class="header__nav--item__subnav--item"><a href="./detail-hyundai-i10.html">Xe thương mại</a></li>
+                  <li class="header__nav--item__subnav--item"><a href="./detail-hyundai-i10.html">Limousine An Phú</a></li>
                 </ul>
               </li>
               <li class="header__nav--item">
-                <a href="" class="header__nav--link">Tin tức</a>
+                <a href="./news.html" class="header__nav--link">Tin tức</a>
                 <ul class="header__nav--item__subnav">
-                  <li class="header__nav--item__subnav--item">Tin khuyến mãi</li>
-                  <li class="header__nav--item__subnav--item">Tin khuyến mãi</li>
-                  <li class="header__nav--item__subnav--item">Tin khuyến mãi</li>
-                  <li class="header__nav--item__subnav--item">Tin khuyến mãi</li>
-                  <li class="header__nav--item__subnav--item">Tin khuyến mãi</li>
-                  <li class="header__nav--item__subnav--item">Tin khuyến mãi</li>
-                  <li class="header__nav--item__subnav--item">Tin khuyến mãi</li>
+                  <li class="header__nav--item__subnav--item"><a href="./news.html">Tin khuyến mãi</a></li>
+                  <li class="header__nav--item__subnav--item"><a href="./news.html">Tin khuyến mãi</a></li>
+                  <li class="header__nav--item__subnav--item"><a href="./news.html">Tin khuyến mãi</a></li>
+                  <li class="header__nav--item__subnav--item"><a href="./news.html">Tin khuyến mãi</a></li>
+                  <li class="header__nav--item__subnav--item"><a href="./news.html">Tin khuyến mãi</a></li>
+                  <li class="header__nav--item__subnav--item"><a href="./news.html">Tin khuyến mãi</a></li>
+                  <li class="header__nav--item__subnav--item"><a href="./news.html">Tin khuyến mãi</a></li>
                 </ul>
               </li>
               <li class="header__nav--item">
-                <a href="" class="header__nav--link">Dịch vụ</a>
+                <a href="./service.html" class="header__nav--link">Dịch vụ</a>
                 <ul class="header__nav--item__subnav">
-                  <li class="header__nav--item__subnav--item">Chăm sóc khách hàng</li>
-                  <li class="header__nav--item__subnav--item">Chính sách bảo hành</li>
-                  <li class="header__nav--item__subnav--item">Bảo dưỡng định kỳ</li>
-                  <li class="header__nav--item__subnav--item">Phụ tùng và phụ kiện</li>
+                  <li class="header__nav--item__subnav--item"><a href="./service.html">Chăm sóc khách hàng</a></li>
+                  <li class="header__nav--item__subnav--item"><a href="./service.html">Chính sách bảo hành</a></li>
+                  <li class="header__nav--item__subnav--item"><a href="./service.html">Bảo dưỡng định kỳ</a></li>
+                  <li class="header__nav--item__subnav--item"><a href="./service.html">Phụ tùng và phụ kiện</a></li>
                 </ul>
               </li>
               <li class="header__nav--item">
-                <a href="" class="header__nav--link">Đăng ký lái thử</a>
+                <a href="./test-drive.html" class="header__nav--link">Đăng ký lái thử</a>
                 <ul class="header__nav--item__subnav">
-                  <li class="header__nav--item__subnav--item">Đăng ký lái thử</li>
-                  <li class="header__nav--item__subnav--item">Đặt lịch bảo dưỡng</li>
+                  <li class="header__nav--item__subnav--item"><a href="./test-drive.html">Đăng ký lái thử</a></li>
+                  <li class="header__nav--item__subnav--item"><a href="./test-drive.html">Đặt lịch bảo dưỡng</a></li>
                 </ul>
               </li>
               <li class="header__nav--item">
-                <a href="" class="header__nav--link">Mua xe</a>
+                <a href="./buycar.html" class="header__nav--link">Mua xe</a>
                 <ul class="header__nav--item__subnav">
-                  <li class="header__nav--item__subnav--item">Bảng giá</li>
-                  <li class="header__nav--item__subnav--item">Dự toán chi phí</li>
-                  <li class="header__nav--item__subnav--item">Hỗ trợ trả góp</li>
-                  <li class="header__nav--item__subnav--item">Hướng dẫn thủ tục</li>
+                  <li class="header__nav--item__subnav--item"><a href="./buycar.html">Bảng giá</a></li>
+                  <li class="header__nav--item__subnav--item"><a href="./buycar.html">Dự toán chi phí</a></li>
+                  <li class="header__nav--item__subnav--item"><a href="./buycar.html">Hỗ trợ trả góp</a></li>
+                  <li class="header__nav--item__subnav--item"><a href="./buycar.html">Hướng dẫn thủ tục</a></li>
                 </ul>
               </li>
               <li class="header__nav--item">
-                <a href="" class="header__nav--link">Liên hệ</a>
+                <a href="./contact.html" class="header__nav--link">Liên hệ</a>
               </li>
             </ul>
           </div>
@@ -143,7 +146,6 @@
           <div class="header__mb-tl">
             <div class="header__mb-tl1">
               <img src="./assets/img/daily-logo.png" alt="" class="header__mb-tl__logo">
-              <!-- <div class="header__mt-tl__phonenumber">0123456789</div> -->
               <div class="header__mb-tl__icon" onclick="toggleFunction()"><i class="fas fa-bars"></i></div>
             </div>
             <ul class="header__mb-tl__nav--list">
@@ -244,8 +246,17 @@
               <div class="content__slide--fell360__img" id="product">
                 <img id="product-img" src="./assets/img-detail/img-360/es_00.png" alt="" style="cursor: move;" class="content__slide--fell360__img360">
               </div>
-              <div class="content__slide--fell360__img" id="product">
-                <img id="product-img" src="./assets/img-detail/ototrang/es_00.png" alt="" style="cursor: move;" class="content__slide--fell360__img360">
+              <div class="content__slide--fell360__img" id="product1">
+                <img id="product-img1" src="./assets/img-detail/ototrang/es_00.png" alt="" style="cursor: move;" class="content__slide--fell360__img360">
+              </div>
+              <div style="display: none" class="content__slide--fell360__img" id="product2">
+                <img id="product-img2" src="./assets/img-detail/otodo/webdemo.netdeal.vn (4)/es_00.png" alt="" style="cursor: move;" class="content__slide--fell360__img360">
+              </div>
+              <div style="display: none" class="content__slide--fell360__img" id="product3">
+                <img id="product-img3" src="./assets/img-detail/otobac/webdemo.netdeal.vn (5)/es_00.png" alt="" style="cursor: move;" class="content__slide--fell360__img360">
+              </div>
+              <div style="display: none" class="content__slide--fell360__img" id="product4">
+                <img id="product-img4" src="./assets/img-detail/otoxanh/webdemo.netdeal.vn (6)/es_00.png" alt="" style="cursor: move;" class="content__slide--fell360__img360">
               </div>
               <div class="content__slide--fell360__color">
                 <div class="content__slide--fell360__color--pick">
@@ -1342,7 +1353,9 @@
         </div>
           <div class="footer__detail--item l-3-22 m-6 c-12">
             <div class="footer__detail--item__heading">FACEBOOK</div>
-            <div class="footer__detail--item__bottom"></div>
+            <div class="footer__detail--item__bottom">
+              <div class="fb-page" data-href="https://www.facebook.com/hyundaianphu.mpcauto.vn/" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/hyundaianphu.mpcauto.vn/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/hyundaianphu.mpcauto.vn/">Hyundai An Phú</a></blockquote></div>
+            </div>
           </div>
         </div>
         <div class="footer__address">
@@ -1362,18 +1375,61 @@
         <div class="footer__copyright">COPYRIGHT ©IDOCNET 2018</div>
       </div>
     </div>
+    <!-- <script src="https://www.cssscript.com/demo/360-degree-image-viewer-with-pure-javascript-circlr/circlr.min.js"></script>
+
+    <script type="text/javascript">
+    var crl = circlr('circlr', {
+    scroll : true,
+    loader : 'loader'
+    });
+    </script> -->
+    <!-- <script type="text/javascript">
+      $(document).ready(function(){
+       //Load the image URLs into an Array.
+              var arr = new Array();
+              $("#dvImages img").each(function () {
+                  arr.push($(this).attr("src"));
+              });
+  
+              //Set the first image URL as source for the Product.
+              $("#product1, #product2, #product3").attr("src", arr[0]);
+  
+              //Click mode.
+              $("#product1").threesixty({ images: arr,
+                  method: 'click',
+                  sensibility: 1
+              });
+  
+              //MouseMove mode.
+              // $("#product2").threesixty({ images: arr,
+              //     method: 'mousemove',
+              //     sensibility: 1
+              // });
+  
+              // //Automatic mode.
+              // $("#product3").threesixty({ images: arr,
+              //     method: 'auto',
+              //     direction: 'forward',
+              //     autoscrollspeed: 100
+              // });
+              setTimeout(function(){ 
+              $(".progressBg").hide();
+              $(".overlay").hide();
+                }, 3000);
+      
+      
+      })
+      </script> -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/@3dweb/360javascriptviewer/lib/JavascriptViewer.min.js"></script>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v11.0" nonce="x25ps3wk"></script>
     <script type="application/javascript">
-      // const btn360 = document.querySelectorAll('.content__slide--fell360__btn')
-      // btn360[0].onclick = () => {
         window.addEventListener('load', () => {
         const jsv = new JavascriptViewer({ 
           mainHolderId: 'product',
           mainImageId: 'product-img',
           imageUrlFormat: 'es_xx.png',
-          // imageUrlFormat: 'img-detail/ototrang/es_xx.png',
           totalFrames:  35,
           defaultProgressBar:  true,
           speed: 90,
@@ -1393,8 +1449,112 @@
           .then(() => console.log('viewer started'))
           .catch((e) => console.log('failed loading 360 viewer: ' + e))
         });
-      // }
     </script>
+    <script type="application/javascript">
+        window.addEventListener('load', () => {
+        const jsv = new JavascriptViewer({ 
+          mainHolderId: 'product1',
+          mainImageId: 'product-img1',
+          imageUrlFormat: 'es_xx.png',
+          totalFrames:  35,
+          defaultProgressBar:  true,
+          speed: 90,
+          inertia: 12,
+          reverse:true,
+          // zoom:true,
+          autoRotate:1,
+          notificationConfig:{
+            dragToRotate:{
+              showStartToRotateDefaultNotification:true,
+              mainColor:"rgba(0,0,0,0.20)",
+              textColor:"rgba(243,237,237,0.80)",
+            }
+          }});
+  
+          jsv.start()
+          .then(() => console.log('viewer started'))
+          .catch((e) => console.log('failed loading 360 viewer: ' + e))
+        });
+    </script>
+    <script type="application/javascript">
+      window.addEventListener('load', () => {
+      const jsv = new JavascriptViewer({ 
+        mainHolderId: 'product2',
+        mainImageId: 'product-img2',
+        imageUrlFormat: 'es_xx.png',
+        totalFrames:  35,
+        defaultProgressBar:  true,
+        speed: 90,
+        inertia: 12,
+        reverse:true,
+        // zoom:true,
+        autoRotate:1,
+        notificationConfig:{
+          dragToRotate:{
+            showStartToRotateDefaultNotification:true,
+            mainColor:"rgba(0,0,0,0.20)",
+            textColor:"rgba(243,237,237,0.80)",
+          }
+        }});
+
+        jsv.start()
+        .then(() => console.log('viewer started'))
+        .catch((e) => console.log('failed loading 360 viewer: ' + e))
+      });
+  </script>
+  <script type="application/javascript">
+    window.addEventListener('load', () => {
+    const jsv = new JavascriptViewer({ 
+      mainHolderId: 'product3',
+      mainImageId: 'product-img3',
+      imageUrlFormat: 'es_xx.png',
+      totalFrames:  35,
+      defaultProgressBar:  true,
+      speed: 90,
+      inertia: 12,
+      reverse:true,
+      // zoom:true,
+      autoRotate:1,
+      notificationConfig:{
+        dragToRotate:{
+          showStartToRotateDefaultNotification:true,
+          mainColor:"rgba(0,0,0,0.20)",
+          textColor:"rgba(243,237,237,0.80)",
+        }
+      }});
+
+      jsv.start()
+      .then(() => console.log('viewer started'))
+      .catch((e) => console.log('failed loading 360 viewer: ' + e))
+    });
+</script>
+<script type="application/javascript">
+  window.addEventListener('load', () => {
+  const jsv = new JavascriptViewer({ 
+    mainHolderId: 'product4',
+    mainImageId: 'product-img4',
+    imageUrlFormat: 'es_xx.png',
+    totalFrames:  35,
+    defaultProgressBar:  true,
+    speed: 90,
+    inertia: 12,
+    reverse:true,
+    // zoom:true,
+    autoRotate:1,
+    notificationConfig:{
+      dragToRotate:{
+        showStartToRotateDefaultNotification:true,
+        mainColor:"rgba(0,0,0,0.20)",
+        textColor:"rgba(243,237,237,0.80)",
+      }
+    }});
+
+    jsv.start()
+    .then(() => console.log('viewer started'))
+    .catch((e) => console.log('failed loading 360 viewer: ' + e))
+  });
+</script>
     <script src="./js/detail.js"></script>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v11.0" nonce="x25ps3wk"></script>
   </body>
 </html>

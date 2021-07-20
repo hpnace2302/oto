@@ -6,6 +6,13 @@
   width: 100%;
   display: block;
   padding: 0;
+  /* border-bottom: 1px solid #C0C8C9; */
+}
+.grid.border__bottom {
+  width: 100%;
+  display: block;
+  padding: 0;
+  border-bottom: 1px solid #C0C8C9;
 }
 
 .row {
@@ -38,10 +45,19 @@
     flex: 0 0 8.33333%;
     max-width: 8.33333%;
 }
+.c-1-5 {
+  flex: 0 0 14.28471%;
+  max-width: 14.28471%;
+}
 
 .c-2 {
     flex: 0 0 16.66667%;
     max-width: 16.66667%;
+}
+
+.c-2-5 {
+  flex: 0 0 20%;
+  max-width: 20%;
 }
 
 .c-3 {
@@ -337,6 +353,11 @@
     .l-2-4 {
         flex: 0 0 20%;
         max-width: 20%;
+    }
+
+    .l-2-8 {
+      flex: 0 0 22%;
+      max-width: 22%;
     }
 
     .l-3 {

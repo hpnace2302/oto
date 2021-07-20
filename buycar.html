@@ -16,9 +16,9 @@
     />
     <link rel="stylesheet" href="./assets/font-awesome/css/fontawesome-all.min.css">
     <link rel="stylesheet" href="./assets/grid.css">
-    <link rel="stylesheet" href="./assets/css-index/style.css">
-    <link rel="stylesheet" href="./assets/css-index/base.css">
-    <link rel="stylesheet" href="./assets/css-detail/responsive.css">
+    <link rel="stylesheet" href="./assets/base.css">
+    <link rel="stylesheet" href="./assets/css-buycar/style.css">
+    <link rel="stylesheet" href="./assets/css-buycar/responsive.css">
     <!-- reset css -->
     <style>
       html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {  margin: 0;  padding: 0;  border: 0;  font-size: 100%;  font: inherit;  vertical-align: baseline;}
@@ -223,50 +223,335 @@
       </div>
       <div class="content">
         <div class="grid wide">
-          <div class="content__nav--product__list">
-            <div class="content__nav--product__item l-3 c-6 m-6">
-              <img src="./assets/img/pro-cate-1.png" alt="" class="content__nav--product__item--img">
-              <div class="content__nav--product__item--name active">Xe du lịch</div>
-            </div>
-            <div class="content__nav--product__item l-3 c-6 m-6">
-              <img src="./assets/img/pro-cate-1.png" alt="" class="content__nav--product__item--img">
-              <div class="content__nav--product__item--name">Xe SUV</div>
-            </div>
-            <div class="content__nav--product__item l-3 c-6 m-6">
-              <img src="./assets/img/pro-cate-1.png" alt="" class="content__nav--product__item--img">
-              <div class="content__nav--product__item--name">Xe thương mại</div>
-            </div>
-            <div class="content__nav--product__item l-3 c-6 m-6">
-              <img src="./assets/img/pro-cate-1.png" alt="" class="content__nav--product__item--img">
-              <div class="content__nav--product__item--name">Limousine An Phú</div>
+          <div class="content__header">
+            <div class="content__header--item l-3">Bảng giá</div>
+            <div class="content__header--item l-3">Dự toán chi phí</div>
+            <div class="content__header--item l-3">Hỗ trợ trả góp</div>
+            <div class="content__header--item l-3">Hướng dẫn thủ tục</div>
+          </div>
+          <div class="content__price">
+            <div class="content__list">
+              <div class="content__export">
+                <i class="fas fa-download"></i>
+                Xuất Excel
+              </div>
+              <div class="content__price--item">
+                <div class="content__item1">
+                  <div class="content__item1--left">
+                    <img src="http://webdemo.netdeal.vn:12071/tempfiles/uploads/products/Anhmenu/grand-i10.png" alt="" class="content__item1--left__img">
+                    <p>Grand i10</p>
+                  </div>
+                  <div class="content__item1--right">
+                    <div class="content__item1--right__btn active">Dự toán chi phí</div>
+                    <div class="content__item1--right__btn">Đăng ký lái thử</div>
+                  </div>
+                </div>
+                <div class="content__item2">
+                  <div class="content__item2--detail">
+                    <div class="content__item2--detail__name">BA - Grand i10 1.2 AT (DUBAI)</div>
+                    <div class="content__item2--detail__price">380.000.000 VNĐ</div>
+                  </div>
+                  <div class="content__item2--detail">
+                    <div class="content__item2--detail__name">BA - Grand i10 1.2 AT (DUBAI)</div>
+                    <div class="content__item2--detail__price">380.000.000 VNĐ</div>
+                  </div>
+                  <div class="content__item2--detail">
+                    <div class="content__item2--detail__name">BA - Grand i10 1.2 AT (DUBAI)</div>
+                    <div class="content__item2--detail__price">380.000.000 VNĐ</div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="content__product--list">
-            <div class="content__product--item l-3 c-6 m-6">
-              <a href="./detail-hyundai-i10.html" class="content__product--link">
-                <img src="./assets//img/grand-i10.png" alt="Grand i10" class="content__product--img">
-              <div class="content__product--name">Grand i10</div>
-              </a>
+          <div class="content__cost-estimates">
+            <div class="content__left l-6">
+              <div class="content__item">
+                <div class="content__item--name">Mẫu xe</div>
+                <select name="" id="">
+                  <option value="">Chọn mẫu xe</option>
+                  <option value="">Grand i10</option>
+                  <option value="">Grand i10 sedan</option>
+                  <option value="">Tucson</option>
+                  <option value="">New Santa Fe</option>
+                  <option value="">Elantra 2019</option>
+                  <option value="">Elantra sport</option>
+                </select>
+              </div>
+              <div class="content__item">
+                <div class="content__item--name">Dòng xe</div>
+                <select name="" id="">
+                  <option value="">Chọn dòng xe</option>
+                </select>
+              </div>
+              <div class="content__item">
+                <div class="content__item--name">Tỉnh/TP</div>
+                <select name="" id="">
+                  <option value="">Chọn Tỉnh/TP</option>
+                  <option value="">Hà Nội</option>
+                  <option value="">HCM</option>
+                </select>
+              </div>
+              <div class="content__item">
+                <div class="content__submit">Tính phí</div>
+              </div>
             </div>
-            <div class="content__product--item l-3 c-6 m-6">
-              <img src="./assets/img/grand-i10-sedan.png" alt="Grand i10 sedan" class="content__product--img">
-              <div class="content__product--name">Grand i10 sedan</div>
+            <div class="content__right l-6">
+              <div class="content__right--item">
+                <p>CHI PHÍ DỰ TÍNH:</p>
+                <div class="content__right--price">448.631.000 VNĐ</div>
+              </div>
+              <img src="http://webdemo.netdeal.vn:12071/tempfiles/uploads/products/registers/GRAND-I10_RE.png" alt="" class="content__right--img">
+              <div class="content__right--item">
+                <div class="content__right--item__btn">Chi tiết</div>
+                <div class="content__right--item__btn active">Hỗ trợ trả góp</div>
+              </div>
             </div>
-            <div class="content__product--item l-3 c-6 m-6">
-              <img src="./assets/img/elantra.png" alt="Elantra" class="content__product--img">
-              <div class="content__product--name">Elantra</div>
+          </div>
+          <div class="content__installment">
+            <div class="content__left l-6">
+              <div class="content__item">
+                <div class="content__item--name">Mẫu xe</div>
+                <select name="" id="">
+                  <option value="">Chọn mẫu xe</option>
+                  <option value="">Grand i10</option>
+                  <option value="">Grand i10 sedan</option>
+                  <option value="">Tucson</option>
+                  <option value="">New Santa Fe</option>
+                  <option value="">Elantra 2019</option>
+                  <option value="">Elantra sport</option>
+                </select>
+              </div>
+              <div class="content__item">
+                <div class="content__item--name">Dòng xe</div>
+                <select name="" id="">
+                  <option value="">Chọn dòng xe</option>
+                </select>
+              </div>
+              <div class="content__item">
+                <div class="content__item--name">Trả trước</div>
+                <select name="" id="">
+                  <option value="">Số tiền trả trước</option>
+                  <option value="">10%</option>
+                  <option value="">20%</option>
+                  <option value="">30%</option>
+                  <option value="">40%</option>
+                  <option value="">50%</option>
+                  <option value="">60%</option>
+                  <option value="">70%</option>
+                  <option value="">80%</option>
+                </select>
+              </div>
+              <div class="content__item">
+                <div class="content__item--name">Lãi suất/năm(%)</div>
+                <input type="number" placeholder="">
+              </div>
+              <div class="content__item">
+                <div class="content__item--name">Thời hạn</div>
+                <select name="" id="">
+                  <option value="">Thời hạn vay</option>
+                  <option value="">6 tháng</option>
+                  <option value="">12 tháng</option>
+                  <option value="">18 tháng</option>
+                  <option value="">24 tháng</option>
+                  <option value="">32 tháng</option>
+                  <option value="">48 tháng</option>
+                  <option value="">96 tháng</option>
+                </select>
+              </div>
+              <div class="content__item">
+                <div class="content__submit">Tính</div>
+                <div class="content__submit">Huỷ</div>
+              </div>
             </div>
-            <div class="content__product--item l-3 c-6 m-6">
-              <img src="./assets/img/Elantra-Sport.png" alt="Elantra Sport" class="content__product--img">
-              <div class="content__product--name">Elantra Sport</div>
+            <div class="content__right l-6">
+              <table>
+                <tr>
+                  <th>Kỳ</th>
+                  <th>Tiền gốc(VND)</th>
+                  <th>Lãi suất / năm(VNĐ)</th>
+                  <th>Gốc + Lãi(VND)</th>
+                  <th>Dư nợ(VND)</th>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>6.333.333</td>
+                  <td>124.321</td>
+                  <td>6.457.654</td>
+                  <td>335.666.667</td>
+                </tr>
+              </table>
             </div>
-            <div class="content__product--item l-3 c-6 m-6">
-              <img src="./assets/img/accent.png" alt="Accent" class="content__product--img">
-              <div class="content__product--name">Accent</div>
-            </div>
-            <div class="content__product--item l-3 c-6 m-6">
-              <img src="./assets/img/Elantra_2019.png" alt="Elantra 2019" class="content__product--img">
-              <div class="content__product--name">Elantra 2019</div>
+          </div>
+          <div class="content__procedure">
+            <div class="row " style="margin-top:10px;margin-left:0;">
+              <div class="guide-content col-lg-12 img-responsive">
+                <h1 style="text-align: left;">
+                  <div style="font-size: large;">
+                    <strong>HƯỚNG DẪN THỦ TỤC MUA XE Ô TÔ <a href="/">HYUNDAI</a> TRẢ GÓP </strong>
+                  </div>
+                </h1>
+                <p style="text-align: left;">
+                  <div style="font-size: large;">Để giúp quý khách hàng nắm bắt rõ hơn về thủ tục mua <em>
+                      <strong>
+                        <a href="/">xe Hyundai</a>
+                      </strong>
+                    </em> trả góp, <strong>Hyundai An Phú</strong>&nbsp;xin đưa ra những thông tin hướng dẫn cụ thể để quý khách hàng có thể hiểu thêm về thủ tục trả góp và có những bước chuẩn bị tốt hơn </div>
+                </p>
+                <h2 style="text-align: left;">
+                  <div style="font-size: large;">
+                    <strong>A. Mua <a href="/"> xe Hyundai</a> trả góp đứng tên cá nhân: </strong>
+                  </div>
+                </h2>
+                <h3 style="text-align: left;">
+                  <div style="font-size: large;">
+                    <strong>&nbsp;a.&nbsp;Hồ sơ cần chuẩn bị khi mua <a href="/">xe Hyundai</a> trả góp: </strong>
+                  </div>
+                </h3>
+                <p style="text-align: left;">
+                  <div style="font-size: large;">&nbsp;1.&nbsp;&nbsp;Bản photo hộ khẩu</div>
+                </p>
+                <p style="text-align: left;">
+                  <div style="font-size: large;">&nbsp;2. Bản photo CMND.</div>
+                </p>
+                <p style="text-align: left;">
+                  <div style="font-size: large;">&nbsp;3.&nbsp;Giấy chứng nhận độc thân hoặc giấy kết hôn. (Nếu đã có gia đình thì CMND và hộ khẩu của cả vợ và chồng)</div>
+                </p>
+                <h3 style="text-align: left;">
+                  <div style="font-size: large;">
+                    <strong>b. Chứng minh thu nhập khi mua <a href="/">xe Hyundai</a> trả góp bằng một trong các hình thức sau: </strong>
+                  </div>
+                </h3>
+                <p style="text-align: left;">
+                  <div style="font-size: large;">
+                    <strong>
+                      <div style="text-decoration: underline;">* Hình thức 1:</div>
+                    </strong> Với khách hàng đi làm công ăn lương </div>
+                </p>
+                <p style="text-align: left;">
+                  <div style="font-size: large;">- &nbsp;Hợp đồng lao động, bảng lương, sổ tiết kiệm, tài khoản cá nhân. (Các văn bản phải có dấu đỏ xác nhận)</div>
+                </p>
+                <p style="text-align: left;">
+                  <div style="font-size: large;">
+                    <div style="text-decoration: underline;">
+                      <strong>* Hình thức 2:</strong>
+                    </div> Với khách hàng sở hữu tài sản có giá trị thì có thể chứng minh qua các nguồn. </div>
+                </p>
+                <p style="text-align: left;">
+                  <div style="font-size: large;">- Nhà cửa, đất đai, các loại ô tô , máy móc, dây chuyền nhà máy, nhà xưởng,..</div>
+                </p>
+                <p style="text-align: left;">
+                  <div style="font-size: large;">- Hợp đồng cho thuê xe, thuê nhà, cho thuê xưởng, giấy góp vốn, cổ phần, cổ phiếu, trái phiếu,..</div>
+                </p>
+                <p style="text-align: left;">
+                  <div style="font-size: large;">- Nếu cá nhân có công ty riêng mà thu nhập chủ yếu từ công ty thì thêm: báo cáo thuế, báo cáo tài chính, bảng lương, bảng chia lợi nhuận từ công ty, giấy phép đăng ký kinh doanh.</div>
+                </p>
+                <p style="text-align: left;">
+                  <div style="font-size: large;">
+                    <strong>Trong trường hợp khách hàng mua <a href="/">xe Hyundai</a> không đủ điều kiện, khách hàng vui lòng liên hệ: <a href="tel:1900989878">
+                        <span style="color: #ff0000;">1900 988 978</span>
+                      </a>để được tư vấn MIỄN PHÍ </strong>
+                  </div>
+                </p>
+                <h2 style="text-align: left;">
+                  <div style="font-size: large;">
+                    <strong>c.&nbsp;Ngân hàng hoặc công ty cho vay tài chính sẽ hỗ trợ:</strong>
+                  </div>
+                </h2>
+                <p style="text-align: left;">
+                  <div style="font-size: large;">- Mức tài trợ thông thường 80% trên tài sản thế chấp. (với 1 vài trường hợp hồ sơ có thể duyệt đến 80% giá trị xe)</div>
+                </p>
+                <p style="text-align: left;">
+                  <div style="font-size: large;">- Thời gian tối đa 07 năm.</div>
+                </p>
+                <p style="text-align: left;">
+                  <div style="font-size: large;">- Lãi suất theo lãi suất vay trung hạn của ngân hàng tùy vào từng thời điểm</div>
+                </p>
+                <p style="text-align: left;">
+                  <div style="font-size: large;">- Thời gian thẩm định hồ sơ sau khi nhận đầy đủ là 1 ngày.</div>
+                </p>
+                <p style="text-align: left;">
+                  <div style="font-size: large;">- Chi phí: phí thủ tục hành chánh: Thủ tục hành chánh tại ngân hàng gồm: phí đảm bảo tài sản, phí mở tài khoản, phí công chứng sao y, cà vẹt xe, mua bảo hiểm thân xe 1 trị giá xe trong thời gian vay.</div>
+                </p>
+                <h3 style="text-align: left;">
+                  <div style="font-size: large;">
+                    <strong>d.&nbsp;Quy trình mua <a href="/"> xe Hyundai</a> trả góp tại Hyundai <strong>An Phú</strong>
+                    </strong>
+                  </div>
+                </h3>
+                <p style="text-align: left;">
+                  <div style="font-size: large;">- Khách hàng chuẩn bị đầy đủ hồ sơ theo hướng dẫn của nhân viên tín dụng.</div>
+                </p>
+                <p style="text-align: left;">
+                  <div style="font-size: large;">- Nhân viên thẩm định đến tận nhà để thẩm định và lấy hồ sơ.</div>
+                </p>
+                <p style="text-align: left;">
+                  <div style="font-size: large;">- Sau khi thẩm định ngân hàng sẽ chuyển cho chúng tôi " GIẤY BẢO LÃNH CHO VAY "</div>
+                </p>
+                <p style="text-align: left;">
+                  <div style="font-size: large;"> - Khách hàng sẽ nộp đối ứng (số tiền không vay) cho chúng tôi và mang xe đi đăng ký</div>
+                </p>
+                <p style="text-align: left;">
+                  <div style="font-size: large;">- Sau khi đăng ký, khách hàng chuyển giấy hẹn đăng ký hoặc giấy đăng ký gốc cho ngân hàng và ký giải ngân.</div>
+                </p>
+                <p style="text-align: left;">
+                  <div style="font-size: large;">- Khi tiền nổi trong tài khoản của đại lý 3S <strong>
+                      <a href="/">Hyundai <strong>An Phú</strong>
+                      </a>
+                    </strong> thì khách hàng mang theo CMND và giấy giới thiệu lên nhận xe, ký biên bản bàn giao xe với giấy tờ xe hợp lệ theo pháp luật. </div>
+                </p>
+                <p style="text-align: left;">
+                  <div style="font-size: large;">- Khi có giấy đăng ký xe, Ngân hàng sẽ đi đăng ký và sao y cho khách hàng một bản để sử dụng.</div>
+                </p>
+                <p style="text-align: left;">
+                  <div style="font-size: large;">Trường hợp khách mua qua Công ty cho thuê tài chính thì khách hàng đóng tiền xe tại Công ty cho thuê tài chính. Chi phí đăng ký xe khách hàng phải chịu, Biên bản bàn giao xe 03 bên cùng ký để công ty cho thuê tài chính giải ngân cho chúng tôi</div>
+                </p>
+                <h2 style="text-align: left;">
+                  <div style="font-size: large;">
+                    <strong>B. Khách hàng mua <a href="/">xe Hyundai</a> trả góp đứng tên công ty </strong>
+                  </div>
+                </h2>
+                <p style="text-align: left;">
+                  <div style="font-size: large;">Đối với khách hàng là công ty mua xe trả góp thì các bước làm tương tự như cá nhân mua xe, yêu cầu giấy tờ chuẩn bị như sau:</div>
+                </p>
+                <p style="text-align: left;">
+                  <div style="font-size: large;">- Giấy phép kinh doanh.</div>
+                  <br>
+                  <div style="font-size: large;"> - Giấy bổ nhiệm Giám đốc, bổ nhiệm kế toán trưởng.</div>
+                  <br>
+                  <div style="font-size: large;"> - Giấy đăng ký sử dụng mẫu dấu (bản copy)</div>
+                  <br>
+                  <div style="font-size: large;"> - Mã số thuế</div>
+                  <br>
+                  <div style="font-size: large;"> - Báo cáo thuế 01 năm gần nhất.</div>
+                  <br>
+                  <div style="font-size: large;"> - Báo cáo hoá đơn VAT 01 năm gần nhất.</div>
+                  <br>
+                  <div style="font-size: large;"> - Báo cáo tài chính 01 năm gần nhất.</div>
+                  <br>
+                  <div style="font-size: large;"> - Điều lệ công ty.</div>
+                  <br>
+                  <div style="font-size: large;"> - Biên bản họp của hội đồng quản trị.</div>
+                  <br>
+                  <div style="font-size: large;"> - Hợp đồng kinh tế đầu ra, đầu vào.</div>
+                  <br>
+                  <div style="font-size: large;"> - Giấy sở hữu cơ sở vật chất: nhà máy, dây chuyền, máy móc, thiết bị, nhà xưởng, ôtô khác</div>
+                  <br>
+                  <div style="font-size: large;"> - Đơn xin vay vốn ngân hàng và phương án trả lãi ( theo mẫu của Ngân hàng ).</div>
+                </p>
+                <p style="text-align: left;">
+                  <div style="font-size: large;">
+                    <strong>MỌI THẮC MẮC CẦN GIẢI ĐÁP HOẶC XỬ LÝ CÁC HỒ SƠ KHÓ HOẶC LÀM DỊCH VỤ TRẢ GÓP NHANH QUÝ KHÁCH XIN VUI LÒNG LIÊN HỆ:&nbsp; <a href="tel:1900989878">
+                        <span style="color: #ff0000;">1900 988 978</span>
+                      </a>
+                    </strong>
+                  </div>
+                </p>
+                <p style="text-align: left;">
+                  <strong>
+                    <br>
+                  </strong>
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -353,6 +638,7 @@
     </div>
     <script src="./js/main.js"></script>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v11.0" nonce="x25ps3wk"></script>
+    <script src="./js/buycar.js"></script>
   </body>
 </html>
 

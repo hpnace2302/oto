@@ -16,9 +16,9 @@
     />
     <link rel="stylesheet" href="./assets/font-awesome/css/fontawesome-all.min.css">
     <link rel="stylesheet" href="./assets/grid.css">
-    <link rel="stylesheet" href="./assets/css-index/style.css">
-    <link rel="stylesheet" href="./assets/css-index/base.css">
-    <link rel="stylesheet" href="./assets/css-detail/responsive.css">
+    <link rel="stylesheet" href="./assets/css-testdrive/style.css">
+    <link rel="stylesheet" href="./assets/base.css">
+    <link rel="stylesheet" href="./assets/css-testdrive/responsive.css">
     <!-- reset css -->
     <style>
       html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {  margin: 0;  padding: 0;  border: 0;  font-size: 100%;  font: inherit;  vertical-align: baseline;}
@@ -223,50 +223,63 @@
       </div>
       <div class="content">
         <div class="grid wide">
-          <div class="content__nav--product__list">
-            <div class="content__nav--product__item l-3 c-6 m-6">
-              <img src="./assets/img/pro-cate-1.png" alt="" class="content__nav--product__item--img">
-              <div class="content__nav--product__item--name active">Xe du lịch</div>
+          <div class="test-drive">
+            <div class="content__heading">
+              Đăng kí lái thử
             </div>
-            <div class="content__nav--product__item l-3 c-6 m-6">
-              <img src="./assets/img/pro-cate-1.png" alt="" class="content__nav--product__item--img">
-              <div class="content__nav--product__item--name">Xe SUV</div>
+            <div class="content__heading--bottom"></div>
+            <div class="content__list">
+              <div class="content__item l-6 m-12 c-12">
+                <div class="content__item--title">Thông tin khách hàng</div>
+                <input type="text" class="content__item--input" placeholder="Họ tên">
+                <input type="text" class="content__item--input" placeholder="Di động">
+                <input type="email" class="content__item--input" placeholder="Email">
+                <input type="text" class="content__item--input" placeholder="Địa chỉ">
+              </div>
+              <div class="content__item l-6 m-12 c-12">
+                <div class="content__item--title">Lựa chọn dòng xe</div>
+                <!-- <select style='margin-top: 1rem' name="" id="" class="">
+                  <option value="">Chọn xe</option>
+                  <option value="">Grand i10</option>
+                  <option value="">Grand i10</option>
+                  <option value="">Grand i10</option>
+                  <option value="">Grand i10</option>
+                  <option value="">Grand i10</option>
+                </select> -->
+                <div id="myDropdown"></div>
+                <select name="" id="" class="content__item--choose">
+                  <option value="" >5A Nguyễn Thị Minh Khai, P.Bến Nghé, Q1</option>
+                  <option value="" >1052 Nguyễn Văn Linh, P.Tân Phong, Q7</option>
+                </select>
+                <input type="text" class="content__item--note" placeholder="Ghi chú">
+              </div>
             </div>
-            <div class="content__nav--product__item l-3 c-6 m-6">
-              <img src="./assets/img/pro-cate-1.png" alt="" class="content__nav--product__item--img">
-              <div class="content__nav--product__item--name">Xe thương mại</div>
-            </div>
-            <div class="content__nav--product__item l-3 c-6 m-6">
-              <img src="./assets/img/pro-cate-1.png" alt="" class="content__nav--product__item--img">
-              <div class="content__nav--product__item--name">Limousine An Phú</div>
-            </div>
+            <div class="content__submit">Đăng ký</div>
           </div>
-          <div class="content__product--list">
-            <div class="content__product--item l-3 c-6 m-6">
-              <a href="./detail-hyundai-i10.html" class="content__product--link">
-                <img src="./assets//img/grand-i10.png" alt="Grand i10" class="content__product--img">
-              <div class="content__product--name">Grand i10</div>
-              </a>
+          <div class="content__maintenance">
+            <div class="content__heading">
+              Đặt lịch bảo dưỡng
             </div>
-            <div class="content__product--item l-3 c-6 m-6">
-              <img src="./assets/img/grand-i10-sedan.png" alt="Grand i10 sedan" class="content__product--img">
-              <div class="content__product--name">Grand i10 sedan</div>
+            <div class="content__heading--bottom"></div>
+            <div class="content__maintenance__name">Hyundai An Phú</div>
+            <div class="content__maintenance__detail">
+              <p>Showroom 2S: 1052 Nguyễn Văn Linh, P.Tân Phong, Quận 7, TP.HCM</p>
+              <p>Showroom 1S: 5A Nguyễn Thị Minh Khai, P.Bến Nghé, Quận 1, TP.HCM</p>
+              <p>Hotline: 098 134 1111</p>
+              <p>Email: <span>info@anphuhyundai.com.vn</span></p>
             </div>
-            <div class="content__product--item l-3 c-6 m-6">
-              <img src="./assets/img/elantra.png" alt="Elantra" class="content__product--img">
-              <div class="content__product--name">Elantra</div>
-            </div>
-            <div class="content__product--item l-3 c-6 m-6">
-              <img src="./assets/img/Elantra-Sport.png" alt="Elantra Sport" class="content__product--img">
-              <div class="content__product--name">Elantra Sport</div>
-            </div>
-            <div class="content__product--item l-3 c-6 m-6">
-              <img src="./assets/img/accent.png" alt="Accent" class="content__product--img">
-              <div class="content__product--name">Accent</div>
-            </div>
-            <div class="content__product--item l-3 c-6 m-6">
-              <img src="./assets/img/Elantra_2019.png" alt="Elantra 2019" class="content__product--img">
-              <div class="content__product--name">Elantra 2019</div>
+            <div class="content__maintenance--form">
+              <div class="content__maintenance--form__item l-6 ">
+                <input type="text" placeholder="Họ tên">
+                <input type="text" placeholder="Số điện thoại">
+                <input type="email" placeholder="Email">
+                <input type="text" placeholder="Địa chỉ">
+              </div>
+              <div class="content__maintenance--form__item l-6 ">
+                <input type="date" placeholder="Đặt lịch hẹn bảo dưỡng">
+                <input type="text" placeholder="Nội dung">
+                <div class="content__maintenance--form__btn">Gửi</div>
+              </div>
             </div>
           </div>
         </div>
@@ -351,8 +364,53 @@
         <div class="footer__copyright">COPYRIGHT ©IDOCNET 2018</div>
       </div>
     </div>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdn.rawgit.com/prashantchaudhary/ddslick/master/jquery.ddslick.min.js" ></script>
+  <script>
+    var ddData = [
+    {
+        text: "Grand i10",
+        value: 1,
+        selected: false,
+        // description: "Description with Facebook",
+        imageSrc: "http://webdemo.netdeal.vn:12071/tempfiles/uploads/products/registers/grand-i10_RE.png"
+    },
+    {
+        text: "Grand i10 sedan",
+        value: 2,
+        selected: false,
+        // description: "Description with Twitter",
+        imageSrc: "http://webdemo.netdeal.vn:12071/tempfiles/uploads/products/registers/grand-i10-sedan_RE.png"
+    },
+    {
+        text: "Tucson",
+        value: 3,
+        selected: true,
+        // description: "Description with LinkedIn",
+        imageSrc: "http://webdemo.netdeal.vn:12071/tempfiles/uploads/products/registers/tucson_RE.png"
+    },
+    {
+        text: "Santa Fe",
+        value: 4,
+        selected: false,
+        // description: "Description with Foursquare",
+        imageSrc: "http://webdemo.netdeal.vn:12071/tempfiles/uploads/products/registers/new-santa-fe_RE.png"
+    }
+];
+$('#myDropdown').ddslick({
+    data:ddData,
+    width:300,
+    selectText: "Select your preferred social network",
+    imagePosition:"right",
+    onSelected: function(selectedData){
+        //callback function: do something with selectedData;
+    }   
+});
+  </script>
     <script src="./js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v11.0" nonce="x25ps3wk"></script>
+    <script src="./js/test-drive.js"></script>
   </body>
 </html>
 

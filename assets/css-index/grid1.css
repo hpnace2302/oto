@@ -6,7 +6,12 @@
   width: 100%;
   display: block;
   padding: 0;
-  /* border-bottom: 1px solid #C0C8C9; */
+}
+.grid.border__bottom {
+  width: 100%;
+  display: block;
+  padding: 0;
+  border-bottom: 1px solid #C0C8C9;
 }
 
 .row {
@@ -38,10 +43,6 @@
 .c-1 {
     flex: 0 0 8.33333%;
     max-width: 8.33333%;
-}
-.c-1-5 {
-  flex: 0 0 14.28471%;
-  max-width: 14.28471%;
 }
 
 .c-2 {

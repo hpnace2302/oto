@@ -1,0 +1,123 @@
+@media screen and (max-width: 1279px) {
+  .header__right {
+    display: none
+  }
+}
+@media screen and (max-width: 1050px) {
+  .header__logo {
+    display:none;
+  }
+}
+
+
+/* Mobile & Tablet */
+@media (max-width : 1023px) {
+  .scroll-top,.social,.regist_make-app,.header__left,.header__right {
+    display:none;
+  }
+  .header {
+    position:fixed;
+    background-color: var(--background-color1);
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 4;
+    margin: 0;
+    width: 100%;
+    -webkit-box-shadow: 0 2px 4px 0 rgb(0 0 0 / 100%);
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 100%);
+  }
+  .header__mb-tl__icon {
+    position: absolute;
+    right: 2rem;
+    
+  }
+  .grid.wide {
+    width: 100%;;
+    margin: 0 auto;
+  }
+  .footer__detail {
+    margin: 0;
+  }
+  .footer__address {
+    margin: 3rem 0 0;
+    padding: 0 0 9rem 0;
+  }
+  .nav1 {
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+  }
+  .header__mb-tl1 {
+    display: flex;
+    height: 100%;
+  }
+  .header__mb-tl__nav--list {
+    margin-top: 1rem;
+  }
+  .icon__mobile {
+    display: block;
+  }
+  .chat__header--btn {
+    display: none;
+  }
+  .content__header {
+    margin-top: 5rem;
+  }
+}
+/* Tablet */
+@media (min-width : 740px ) and (max-width : 1023px) {
+  .footer {
+    width: 100%;
+  }
+  .footer__detail--item {
+    padding: 0 3rem;
+    margin: 0;
+  }
+  .footer__address--item {
+    margin: 0;
+    padding: 0 0.5rem;
+  }
+  .heading {
+    width: 35%;
+  }
+  .header__mt-tl__phonenumber {
+    font-size:3rem;
+    font-weight: 600;
+    margin-right: 38%;
+  }
+}
+
+/* Mobile */
+@media (max-width : 739px) {
+  .footer {
+    width: 100%;
+  }
+  .footer__detail--item,.footer__address--item {
+    /* width: 25%; */
+    padding: 0 2rem;
+    margin: 0;
+  }
+  .footer__detail--item__heading {
+    margin-top: 2rem;
+  }
+  .heading {
+    width: 65%;
+  }
+  .title {
+    padding: 8rem 1.5rem 0;
+    line-height:1.4;
+  }
+  .desc {
+    padding: 0 1.5rem;
+  }
+  .header__mt-tl__phonenumber {
+    font-size:2rem;
+    font-weight: 600;
+    margin-right: 35%;
+  }
+  .chat {
+    width: 25rem;
+  }
+}
