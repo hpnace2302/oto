@@ -420,7 +420,7 @@
 }
 .content__guarantee {
   margin: 5rem 0;
-  display: none;
+  /* display: none; */
 }
 .content__guarantee--title {
   margin-bottom: 3rem;
@@ -433,7 +433,7 @@
 }
 .content__maintenance {
   margin: 5rem 0;
-  display: none;
+  /* display: none; */
 }
 .content__maintenance--desc {
   margin-bottom: 1rem;
@@ -443,7 +443,7 @@
 }
 .content__accessories {
   margin: 5rem 0;
-  display: none;
+  /* display: none; */
 }
 .content__accessories--titile {
   margin-bottom: 2rem;

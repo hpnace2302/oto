@@ -206,3 +206,6 @@ span {color: var(--text-color2); cursor: pointer;}
 .hotline-bar > a:active {
   color: #fff;
 }
+a:visited {
+  color: var(--text-color1);
+}

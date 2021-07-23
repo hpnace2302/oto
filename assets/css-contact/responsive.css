@@ -15,6 +15,9 @@
   .scroll-top,.social,.regist_make-app,.header__left,.header__right {
     display:none;
   }
+  .header__mb-tl {
+    display: block;
+  }
   .header {
     position:fixed;
     background-color: var(--background-color1);
@@ -96,14 +99,11 @@
   .contact__form {
     justify-content: space-around;
   }
-  .contact__form--item {
-    margin-top: 3rem;
-  }
   .contact__submit {
     width: 15%;
   }
-  .contact__form--item__input {
-    
+  .contact__form--item {
+    margin-top: 1rem;
   }
 }
 
@@ -148,8 +148,12 @@
     padding: 0;
     display: block;
   }
+  .contact__form--item {
+    padding: 0 1rem;
+  }
   .contact__form--item__title {
     width: 30%;
+    font-size:1.2rem;
   }
   .contact__submit {
     width: 20%;

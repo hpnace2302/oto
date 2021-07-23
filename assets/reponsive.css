@@ -15,6 +15,12 @@
   .scroll-top,.social,.regist_make-app,.header__left,.header__right {
     display:none;
   }
+  .header__mb-tl {
+    display: block;
+  }
+  .content__header {
+    margin-top: 6rem;
+  }
   .header {
     position:fixed;
     background-color: var(--background-color1);
@@ -62,6 +68,9 @@
   .chat__header--btn {
     display: none;
   }
+  .content__body {
+    padding: 0 1rem;
+  }
 }
 /* Tablet */
 @media (min-width : 740px ) and (max-width : 1023px) {
@@ -83,6 +92,9 @@
     font-size:3rem;
     font-weight: 600;
     margin-right: 38%;
+  }
+  .content__left--share {
+    width: 30%;
   }
 }
 
@@ -116,5 +128,34 @@
   }
   .chat {
     width: 25rem;
+  }
+  .content__body {
+    display: block;
+  }
+  .footer__detail--item__bottom:first-child {
+    max-width: 50%;
+  }
+  .content__left--item {
+    display: block;
+  }
+  .content__left--item--img {
+    width: 100%;
+  }
+  .content__right {
+    margin-top: 4rem;
+    padding: 0;
+  }
+  .content__left--share {
+    width: 40%;
+  }
+  .content__left--item__detail {
+    padding: 0;
+    margin-top: 1rem;
+  }
+  .content__left {
+    padding: 0;
+  }
+  .header__mb-tl__nav--list {
+    margin-top: 0.2rem;
   }
 }

@@ -15,6 +15,9 @@
   .scroll-top,.social,.regist_make-app,.header__left,.header__right {
     display:none;
   }
+  .header__mb-tl {
+    display: block;
+  }
   .header {
     position:fixed;
     background-color: var(--background-color1);
@@ -72,7 +75,7 @@
     height: 100%;
   }
   .header__mb-tl__nav--list {
-    margin-top: 1rem;
+    margin-top: 0.2rem;
   }
   .content__slide--fell360__img {
     margin: 0;
@@ -85,6 +88,9 @@
   }
   .chat__header--btn {
     display: none;
+  }
+  .content__nav--product__item a{
+    display: flex;
   }
 }
 /* Tablet */
@@ -131,6 +137,9 @@
   }
   .content__product--item {
     height: 40rem;
+  }
+  .contact__form--item {
+    margin-top: 0rem;
   }
 }
 
@@ -272,5 +281,42 @@
   }
   .chat {
     width: 25rem;
+  }
+  .content__product--item {
+    padding-left: 0;
+  }
+  .heading {
+    font-size: 3.6rem;
+  }
+  .content__slide--nav__item a{
+    font-size:0.8rem;
+  }
+  .content__slide--control__item--img {
+    width: 4rem;
+  }
+  .content__slide--control__item--name {
+    font-size:1.4rem;
+  }
+  .content__slide--fell360__color--pick__img {
+    width: 2rem;
+  }
+  .content__slide--evaluete__item--name {
+    font-size: 1.4rem;
+  }
+  .content__slide--detail,.content__slide--fell360,.content__slide--picture,.content__slide--evaluate,.content__slide--parameter {
+    /* height: 30rem; */
+  }
+  .content__slide--evaluete__list {
+    padding-left:1rem;
+    padding-right:1rem;
+  }
+  .content__slide--evaluete__item {
+    padding: 0 0.5rem;
+  }
+  .content__slide--control {
+    /* margin-top: 0; */
+  }
+  .owl-nav {
+    display: none;
   }
 }

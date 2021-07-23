@@ -15,6 +15,9 @@
   .scroll-top,.social,.regist_make-app,.header__left,.header__right {
     display:none;
   }
+  .header__mb-tl {
+    display: block;
+  }
   .header {
     position:fixed;
     background-color: var(--background-color1);
@@ -64,6 +67,9 @@
   }
   .content__header {
     margin-top: 5rem;
+  }
+  .content__care,.content__guarantee,.content__maintenance,.content__accessories {
+    padding: 0 1rem;
   }
 }
 /* Tablet */
@@ -119,5 +125,11 @@
   }
   .chat {
     width: 25rem;
+  }
+  .content__header--item__title {
+    font-size:1.2rem;
+  }
+  .content__heading {
+    font-size:2rem;
   }
 }

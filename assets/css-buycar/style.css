@@ -374,12 +374,14 @@
 }
 .content__header {
   display: flex;
+  flex-wrap: wrap;
 }
 .content__header--item {
   color: var(--text-color2);
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: 600;
   cursor: pointer;
+  text-transform: uppercase;
 }
 .content__header--item:hover {
   color: var(--primary-color);
@@ -399,7 +401,6 @@
 .content__price {
   display: block;
   margin: 5rem 0;
-  /* height: 50rem; */
 }
 .content__list {
 
@@ -449,20 +450,19 @@
   padding: 2rem 3rem;
 }
 .content__item2--detail__name {
-  width: 50%;
+  /* width: 50%; */
   font-size: 2.4rem;
   font-weight: 600;
 }
 .content__item2--detail__price {
-  width: 50%;
+  /* width: 50%; */
   font-weight: 600;
   color: red;
 }
 
 .content__cost-estimates {
+  display: flex;
   margin: 5rem 0;
-  /* display: flex; */
-  display: none;
 }
 .content__left {
   padding-right: 2rem;
@@ -530,9 +530,7 @@
 }
 .content__installment {
   display:flex;
-  display: none;
   margin: 5rem 0;
-  /* padding: 5rem 0; */
   height: 40rem;
 }
 table, th, td {
@@ -540,7 +538,7 @@ table, th, td {
 }
 .content__procedure {
   margin: 5rem 0;
-  display: none;
+  /* display: none; */
 }
 
 /* End Content */

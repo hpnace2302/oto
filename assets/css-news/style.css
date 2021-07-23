@@ -372,6 +372,7 @@
 
 .content__header {
   display: flex;
+  flex-wrap: wrap;
   margin: 3rem 0;
 }
 .content__header--item {
@@ -406,7 +407,9 @@
 }
 .content__left--item {
   display: flex;
-  height: 20rem;
+  /* height: 20rem; */
+  flex-wrap: wrap;
+  margin-bottom: 5rem;
 }
 .content__left--item--img {
   height: 50%;
@@ -455,6 +458,7 @@
   width: 100%;
   justify-content:center;
   margin: 2rem 0;
+  flex-wrap: wrap;
 }
 .content__navigation--item {
   color: var(--text-color2);
@@ -610,3 +614,49 @@
   font-size: 1.6rem;
 }
 /* End CSS Footer */
+
+.content__left--header {
+  padding-bottom: 4rem;
+  border-bottom: 1px solid #ccc;
+}
+.content__left--share {
+  display: flex;
+  background-color: var(--text-color2);
+  width: 20%;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  height: 2rem;
+  margin-bottom: 1rem;
+}
+.content__left--share i {
+  color: var(--text-color3);
+  border-radius: 3rem;
+  margin-right: 0.5rem;
+}
+.content__left--share__name {
+  color: var(--text-color3);
+  margin-right: 0.5rem;
+  font-size:1.4rem;
+}
+.content__left--share__count {
+  color: var(--text-color3);
+  margin-right: 0.5rem;
+  font-size:1.4rem;
+}
+.content__left--heading {
+  font-size:2rem;
+  margin-bottom: 2rem;
+  color: var(--text-color1);
+  font-weight: 500;
+}
+.content__left--time {
+
+  color: var(--text-color1);
+}
+.content__left--body {
+
+}
+.content__left--body p {
+  margin-top: 2rem;
+}

@@ -64,8 +64,6 @@ tabsSlidePictureControl[2].onclick = function () {
   $('.content__slide--picture__exterior--list').style.display = 'flex'
 }
 
-const btnControl = $$('.content__slide--control__item--img')
-
 let gtactive = './assets/img-detail/affix-cover-active.png'
 let cnactive = './assets/img-detail/affix-360-active.png'
 let htactive = './assets/img-detail/affix-gallery-active.png'
@@ -77,66 +75,192 @@ let ht = './assets/img-detail/affix-gallery.png'
 let dg = './assets/img-detail/affix-review.png'
 let ts = './assets/img-detail/affix-spec.png'
 
+// window.onchange = function () {
+  const btnActive = $$('.content__slide--control__item--img')
+
+// console.log(btnActive[0].src)
+const btnControl = $$('.owl-dot')
+// console.log(btnControl[0].classList.value)
+// console.log(btnControl[0].classList.value.indexOf('active'))
+
+  // if (btnControl[0].classList.value.indexOf('active') !== -1) {
+  //   btnActive[0].src = gtactive
+  //   btnActive[1].src = cn
+  //   btnActive[2].src = ht
+  //   btnActive[3].src = dg
+  //   btnActive[4].src = ts
+  // }
+
+  // if (btnControl[1].classList.value.indexOf('active') !== -1) {
+  //   btnActive[0].src = gt
+  //   btnActive[1].src = cnactive
+  //   btnActive[2].src = ht
+  //   btnActive[3].src = dg
+  //   btnActive[4].src = ts
+  // }
+  // if (btnControl[2].classList.value.indexOf('active') !== -1) {
+  //   btnActive[0].src = gt
+  //   btnActive[1].src = cn
+  //   btnActive[2].src = htactive
+  //   btnActive[3].src = dg
+  //   btnActive[4].src = ts
+  // }
+  // if (btnControl[3].classList.value.indexOf('active') !== -1) {
+  //   btnActive[0].src = gt
+  //   btnActive[1].src = cn
+  //   btnActive[2].src = ht
+  //   btnActive[3].src = dgactive
+  //   btnActive[4].src = ts
+  // }
+  // if (btnControl[4].classList.value.indexOf('active') !== -1) {
+  //   btnActive[0].src = gt
+  //   btnActive[1].src = cn
+  //   btnActive[2].src = ht
+  //   btnActive[3].src = dg
+  //   btnActive[4].src = tsactive
+  // }
+//   if (btnControl[0].classList.value.indexOf('active') !== -1) {
+//     // btnActive[0].src = gtactive
+//     // btnActive[1].src = cn
+//     // btnActive[2].src = ht
+//     // btnActive[3].src = dg
+//     // btnActive[4].src = ts
+//     btnActive[0].src = gt
+//     btnActive[1].src = cnactive
+//     btnActive[2].src = ht
+//     btnActive[3].src = dg
+//     btnActive[4].src = ts
+//   }
+
+//   if (btnControl[1].classList.value.indexOf('active') !== -1) {
+//     // btnActive[0].src = gt
+//     // btnActive[1].src = cnactive
+//     // btnActive[2].src = ht
+//     // btnActive[3].src = dg
+//     // btnActive[4].src = ts
+//     btnActive[0].src = gt
+//     btnActive[1].src = cn
+//     btnActive[2].src = htactive
+//     btnActive[3].src = dg
+//     btnActive[4].src = ts
+//   }
+//   if (btnControl[2].classList.value.indexOf('active') !== -1) {
+//     // btnActive[0].src = gt
+//     // btnActive[1].src = cn
+//     // btnActive[2].src = htactive
+//     // btnActive[3].src = dg
+//     // btnActive[4].src = ts
+//     btnActive[0].src = gt
+//     btnActive[1].src = cn
+//     btnActive[2].src = ht
+//     btnActive[3].src = dgactive
+//     btnActive[4].src = ts
+//   }
+//   if (btnControl[3].classList.value.indexOf('active') !== -1) {
+//     // btnActive[0].src = gt
+//     // btnActive[1].src = cn
+//     // btnActive[2].src = ht
+//     // btnActive[3].src = dgactive
+//     // btnActive[4].src = ts
+//     btnActive[0].src = gt
+//     btnActive[1].src = cn
+//     btnActive[2].src = ht
+//     btnActive[3].src = dg
+//     btnActive[4].src = tsactive
+//   }
+//   if (btnControl[4].classList.value.indexOf('active') !== -1) {
+//     // btnActive[0].src = gt
+//     // btnActive[1].src = cn
+//     // btnActive[2].src = ht
+//     // btnActive[3].src = dg
+//     // btnActive[4].src = tsactive
+//     btnActive[0].src = gtactive
+//     btnActive[1].src = cn
+//     btnActive[2].src = ht
+//     btnActive[3].src = dg
+//     btnActive[4].src = ts
+//   }
+// }
+const z = $$('.content__slide--control__item')
+
 btnControl[0].onclick = () => {
-  btnControl[0].src = gtactive
-  btnControl[1].src = cn
-  btnControl[2].src = ht
-  btnControl[3].src = dg
-  btnControl[4].src = ts
-  $('.content__slide--detail').style.display = 'flex'
-  $('.content__slide--fell360').style.display = 'none'
-  $('.content__slide--picture').style.display = 'none'
-  $('.content__slide--evaluate').style.display = 'none'
-  $('.content__slide--parameter').style.display = 'none'
+  btnActive[0].src = gtactive
+  btnActive[1].src = cn
+  btnActive[2].src = ht
+  btnActive[3].src = dg
+  btnActive[4].src = ts
+  // $('.content__slide--detail').style.display = 'flex'
+  // $('.content__slide--fell360').style.display = 'none'
+  // $('.content__slide--picture').style.display = 'none'
+  // $('.content__slide--evaluate').style.display = 'none'
+  // $('.content__slide--parameter').style.display = 'none'
 }
 btnControl[1].onclick = () => {
-  btnControl[0].src = gt
-  btnControl[1].src = cnactive
-  btnControl[2].src = ht
-  btnControl[3].src = dg
-  btnControl[4].src = ts
-  $('.content__slide--detail').style.display = 'none'
-  $('.content__slide--fell360').style.display = 'block'
-  $('.content__slide--picture').style.display = 'none'
-  $('.content__slide--evaluate').style.display = 'none'
-  $('.content__slide--parameter').style.display = 'none'
+  btnActive[0].src = gt
+  btnActive[1].src = cnactive
+  btnActive[2].src = ht
+  btnActive[3].src = dg
+  btnActive[4].src = ts
+  // $('.content__slide--detail').style.display = 'none'
+  // $('.content__slide--fell360').style.display = 'block'
+  // $('.content__slide--picture').style.display = 'none'
+  // $('.content__slide--evaluate').style.display = 'none'
+  // $('.content__slide--parameter').style.display = 'none'
 }
 btnControl[2].onclick = () => {
-  btnControl[0].src = gt
-  btnControl[1].src = cn
-  btnControl[2].src = htactive
-  btnControl[3].src = dg
-  btnControl[4].src = ts
-  $('.content__slide--detail').style.display = 'none'
-  $('.content__slide--fell360').style.display = 'none'
-  $('.content__slide--picture').style.display = 'block'
-  $('.content__slide--evaluate').style.display = 'none'
-  $('.content__slide--parameter').style.display = 'none'
+  btnActive[0].src = gt
+  btnActive[1].src = cn
+  btnActive[2].src = htactive
+  btnActive[3].src = dg
+  btnActive[4].src = ts
+  // $('.content__slide--detail').style.display = 'none'
+  // $('.content__slide--fell360').style.display = 'none'
+  // $('.content__slide--picture').style.display = 'block'
+  // $('.content__slide--evaluate').style.display = 'none'
+  // $('.content__slide--parameter').style.display = 'none'
 }
 btnControl[3].onclick = () => {
-  btnControl[0].src = gt
-  btnControl[1].src = cn
-  btnControl[2].src = ht
-  btnControl[3].src = dgactive
-  btnControl[4].src = ts
-  $('.content__slide--detail').style.display = 'none'
-  $('.content__slide--fell360').style.display = 'none'
-  $('.content__slide--picture').style.display = 'none'
-  $('.content__slide--evaluate').style.display = 'flex'
-  $('.content__slide--parameter').style.display = 'none'
+  btnActive[0].src = gt
+  btnActive[1].src = cn
+  btnActive[2].src = ht
+  btnActive[3].src = dgactive
+  btnActive[4].src = ts
+  // $('.content__slide--detail').style.display = 'none'
+  // $('.content__slide--fell360').style.display = 'none'
+  // $('.content__slide--picture').style.display = 'none'
+  // $('.content__slide--evaluate').style.display = 'flex'
+  // $('.content__slide--parameter').style.display = 'none'
 }
 btnControl[4].onclick = () => {
-  btnControl[0].src = gt
-  btnControl[1].src = cn
-  btnControl[2].src = ht
-  btnControl[3].src = dg
-  btnControl[4].src = tsactive
-  $('.content__slide--detail').style.display = 'none'
-  $('.content__slide--fell360').style.display = 'none'
-  $('.content__slide--picture').style.display = 'none'
-  $('.content__slide--evaluate').style.display = 'none'
-  $('.content__slide--parameter').style.display = 'flex'
+  btnActive[0].src = gt
+  btnActive[1].src = cn
+  btnActive[2].src = ht
+  btnActive[3].src = dg
+  btnActive[4].src = tsactive
+  // $('.content__slide--detail').style.display = 'none'
+  // $('.content__slide--fell360').style.display = 'none'
+  // $('.content__slide--picture').style.display = 'none'
+  // $('.content__slide--evaluate').style.display = 'none'
+  // $('.content__slide--parameter').style.display = 'flex'
 }
+
+// const a = $$('.owl-stage .owl-item') 
+// // console.log(a[0].classList)
+// if (a[0].classList === 'active') {
+//   btnControl[0].src = gtactive
+// } 
+// if (a[1].classList === 'active') {
+//   btnControl[1].src = cnactive
+// } 
+// if (a[2].classList === 'active') {
+//   btnControl[2].src = htactive
+// } 
+// if (a[3].classList === 'active') {
+//   btnControl[3].src = dgactive
+// } 
+// if (a[4].classList === 'active') {
+//   btnControl[4].src = tsactive
+// }
 
 // xử lý slide 360
 
@@ -158,7 +282,8 @@ let otoden = './assets/img-detail/es_0 (4).png'
 colorBtn[0].onclick = function () {
   colorPick.src = cat
   oto.src = otocat
-  oto[0].style.display = 'block'
+  oto[0].style.display = 'flex'
+  oto[0].style.justifyContent = 'center'
   oto[1].style.display = 'none'
   oto[2].style.display = 'none'
   oto[3].style.display = 'none'
@@ -169,7 +294,8 @@ colorBtn[1].onclick = function () {
   colorPick.src = trang
   oto.src = ototrang
   oto[0].style.display = 'none'
-  oto[1].style.display = 'block'
+  oto[1].style.display = 'flex'
+  oto[1].style.justifyContent = 'center'
   oto[2].style.display = 'none'
   oto[3].style.display = 'none'
   oto[4].style.display = 'none'
@@ -180,7 +306,8 @@ colorBtn[2].onclick = function () {
   oto.src = otored
   oto[0].style.display = 'none'
   oto[1].style.display = 'none'
-  oto[2].style.display = 'block'
+  oto[2].style.display = 'flex'
+  oto[2].style.justifyContent = 'center'
   oto[3].style.display = 'none'
   oto[4].style.display = 'none'
   $('.content__slide--fell360__color--pick__name').innerText = 'Đỏ'
@@ -191,7 +318,8 @@ colorBtn[3].onclick = function () {
   oto[0].style.display = 'none'
   oto[1].style.display = 'none'
   oto[2].style.display = 'none'
-  oto[3].style.display = 'block'
+  oto[3].style.display = 'flex'
+  oto[3].style.justifyContent = 'center'
   oto[4].style.display = 'none'
   $('.content__slide--fell360__color--pick__name').innerText = 'Bạc'
 }
@@ -202,7 +330,8 @@ colorBtn[4].onclick = function () {
   oto[1].style.display = 'none'
   oto[2].style.display = 'none'
   oto[3].style.display = 'none'
-  oto[4].style.display = 'block'
+  oto[4].style.display = 'flex'
+  oto[4].style.justifyContent = 'center'
   $('.content__slide--fell360__color--pick__name').innerText = 'Xanh'
 }
 

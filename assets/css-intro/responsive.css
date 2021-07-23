@@ -15,6 +15,9 @@
   .scroll-top,.social,.regist_make-app,.header__left,.header__right {
     display:none;
   }
+  .header__mb-tl {
+    display: block;
+  }
   .header {
     position:fixed;
     background-color: var(--background-color1);

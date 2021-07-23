@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/font-awesome/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="./assets/grid.css">
+    <link rel="stylesheet" href="./assets/css-buycar/style.css">
+    <link rel="stylesheet" href="./assets/base.css">
+    <link rel="stylesheet" href="./assets/css-buycar/responsive.css">
+    <!-- reset css -->
+    <style>
+      html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {  margin: 0;  padding: 0;  border: 0;  font-size: 100%;  font: inherit;  vertical-align: baseline;}
+      article, aside, details, figcaption, figure, 
+      footer, header, hgroup, menu, nav, section {display: block;}body {line-height: 1;}ol, ul {list-style: none;}blockquote, q {quotes: none;}blockquote:before, blockquote:after,q:before, q:after {content: '';content: none;}table {border-collapse: collapse;border-spacing: 0;}
+    </style>
+    <!-- base style -->
+    <style>*,*:before,*:after {  box-sizing: border-box;}/* using rem unit */html {  font-size: 62.5%;scroll-behavior: smooth;}a {  text-decoration: none;}img {  display: block;  max-width: 100%;}body {  font-family: 'Chakra Petch', sans-serif;  font-size: 16px;  line-height: 1;}input,button,textarea,select {  outline: none;  font-family: 'Chakra Petch', sans-serif;  font-size: 16px;  line-height: 1;}input {  line-height: normal;}button {  cursor: pointer;}
+    </style>
+  </head>
+  <body>
+    <div id="home"></div>
+    <div class="wrapper">
+      <div class="social">
+        <img src="./assets/img/youtube.PNG" alt="" class="social__item">
+        <img src="./assets/img/fb.PNG" alt="" class="social__item">
+      </div>
+      <div class="hotline-phone-ring-wrap">
+        <div class="hotline-phone-ring">
+            <div class="hotline-phone-ring-circle"></div>
+            <div class="hotline-phone-ring-circle-fill"></div>
+            <div class="hotline-phone-ring-img-circle">
+            <a href="tel:0123456789" class="pps-btn-img">
+                <img src="https://nocodebuilding.com/wp-content/uploads/2020/07/icon-call-nh.png" alt="Gọi điện thoại" width="50">
+            </a>
+            </div>
+        </div>
+        <div class="hotline-bar">
+            <a href="tel:0123456789">
+                <span style="color: #fff" class="text-hotline">0123 456 789</span>
+            </a>
+        </div>
+    </div>
+    <div class="regist_make-app">
+      <div class="regist">
+        <a href="./test-drive.html" class="regist__link">Đăng ký lái thử</a>
+      </div>
+      <div class="make-app">
+        <a href="./maintenance.html" class="make-app__link">Đặt lịch bảo dưỡng</a>
+      </div>
+    </div>
+      <div class="scroll-top">
+        <a href="#home">
+          <div class="scroll-top__title">Về đầu trang</div>
+          <div class="scroll-top__icon"><i class="fas fa-arrow-up"></i></div>
+        </a>
+      </div>
+      <div class="chat">
+        <div class="chat__header">
+          <i class="far fa-comments icon__mobile"></i>
+          <div class="chat__header--title">Chat với chúng tôi</div>
+          <div class="chat__header--btn"><i class="fas fa-minus"></i></div>
+        </div>
+        <div class="chat__body">
+          <input type="text" class="chat__body--input" placeholder="Mời bạn nhập Tên">
+          <input type="email" class="chat__body--input" placeholder="Mời bạn nhập Email">
+          <input type="number" class="chat__body--input" placeholder="Mời bạn nhập Số điện thoại">
+          <input type="text" class="chat__body--input" placeholder="Mời bạn nhập câu hỏi?">
+          <div class="chat__body--btn">Gửi tin nhắn</div>
+        </div>
+      </div>
+      <div class="grid border__bottom">
+        <div class="header">
+          <div class="header__left">
+            <img src="./assets/img/hyundai-logo.png" alt="" class="header__logo">
+            <ul class="header__nav">
+              <li class="header__nav--item">
+                <a href="./intro.html" class="header__nav--link">Giới thiệu</a>
+              </li>
+              <li class="header__nav--item active">
+                <a href="./index.html" class="header__nav--link">Sản phẩm</a>
+                <ul class="header__nav--item__subnav">
+                  <li class="header__nav--item__subnav--item"><a href="./index.html">Xe du lịch</a></li>
+                  <li class="header__nav--item__subnav--item"><a href="./index2.html">Xe SUV</a></li>
+                  <li class="header__nav--item__subnav--item"><a href="./index3.html">Xe thương mại</a></li>
+                  <li class="header__nav--item__subnav--item"><a href="./index4.html">Limousine An Phú</a></li>
+                </ul>
+              </li>
+              <li class="header__nav--item">
+                <a href="./news.html" class="header__nav--link">Tin tức</a>
+                <ul class="header__nav--item__subnav">
+                  <li class="header__nav--item__subnav--item"><a href="./news.html">Tin khuyến mãi</a></li>
+                  <li class="header__nav--item__subnav--item"><a href="./news.html">Tin khuyến mãi</a></li>
+                  <li class="header__nav--item__subnav--item"><a href="./news.html">Tin khuyến mãi</a></li>
+                  <li class="header__nav--item__subnav--item"><a href="./news.html">Tin khuyến mãi</a></li>
+                  <li class="header__nav--item__subnav--item"><a href="./news.html">Tin khuyến mãi</a></li>
+                  <li class="header__nav--item__subnav--item"><a href="./news.html">Tin khuyến mãi</a></li>
+                  <li class="header__nav--item__subnav--item"><a href="./news.html">Tin khuyến mãi</a></li>
+                </ul>
+              </li>
+              <li class="header__nav--item">
+                <a href="./service.html" class="header__nav--link">Dịch vụ</a>
+                <ul class="header__nav--item__subnav">
+                  <li class="header__nav--item__subnav--item"><a href="./service.html">Chăm sóc khách hàng</a></li>
+                  <li class="header__nav--item__subnav--item"><a href="./sv-guarantee.html">Chính sách bảo hành</a></li>
+                  <li class="header__nav--item__subnav--item"><a href="./sv-maintenance.html">Bảo dưỡng định kỳ</a></li>
+                  <li class="header__nav--item__subnav--item"><a href="./sv-accessories.html">Phụ tùng và phụ kiện</a></li>
+                </ul>
+              </li>
+              <li class="header__nav--item">
+                <a href="./test-drive.html" class="header__nav--link">Đăng ký lái thử</a>
+                <ul class="header__nav--item__subnav">
+                  <li class="header__nav--item__subnav--item"><a href="./test-drive.html">Đăng ký lái thử</a></li>
+                  <li class="header__nav--item__subnav--item"><a href="./maintenance.html">Đặt lịch bảo dưỡng</a></li>
+                </ul>
+              </li>
+              <li class="header__nav--item">
+                <a href="./buycar.html" class="header__nav--link">Mua xe</a>
+                <ul class="header__nav--item__subnav">
+                  <li class="header__nav--item__subnav--item"><a href="./buycar.html">Bảng giá</a></li>
+                  <li class="header__nav--item__subnav--item"><a href="./cost-estimates.html">Dự toán chi phí</a></li>
+                  <li class="header__nav--item__subnav--item"><a href="./installment.html">Hỗ trợ trả góp</a></li>
+                  <li class="header__nav--item__subnav--item"><a href="./procudure.html">Hướng dẫn thủ tục</a></li>
+                </ul>
+              </li>
+              <li class="header__nav--item">
+                <a href="./contact.html" class="header__nav--link">Liên hệ</a>
+              </li>
+            </ul>
+          </div>
+          <img src="./assets/img/daily-logo.png" alt="" class="header__right">
+          <div class="header__mb-tl">
+            <div class="header__mb-tl1">
+              <img src="./assets/img/daily-logo.png" alt="" class="header__mb-tl__logo">
+              <div class="header__mb-tl__icon" onclick="toggleFunction()"><i class="fas fa-bars"></i></div>
+            </div>
+            <ul class="header__mb-tl__nav--list">
+              <li class="header__mb-tl__nav--item">
+                <div class="header__mb-tl__nav--item__name">
+                  <p><a href="./intro.html">Giới thiệu</a></p>
+                </div>
+              </li>
+              <li class="header__mb-tl__nav--item">
+                <div class="header__mb-tl__nav--item__name">
+                  <p><a href="./index.html">Sản phẩm</a></p>
+                  <i class="fas fa-sort-down"></i>
+                </div>
+                <ul class="header__mb-tl__nav--item__subnav">
+                  <li class="header__mb-tl__nav--item__subnav--item"><a href="./index.html">Xe du lịch</a></li>
+                  <li class="header__mb-tl__nav--item__subnav--item"><a href="./index2.html">Xe SUV</a></li>
+                  <li class="header__mb-tl__nav--item__subnav--item"><a href="./index3.html">Xe thương mại</a></li>
+                  <li class="header__mb-tl__nav--item__subnav--item"><a href="./index4.html">Limousine An Phú</a></li>
+                </ul>
+              </li>
+              <li class="header__mb-tl__nav--item">
+                <div class="header__mb-tl__nav--item__name" >
+                  <p><a href="./news.html">Tin tức</a></p>
+                  <i class="fas fa-sort-down"></i>
+                </div>
+                <ul class="header__mb-tl__nav--item__subnav">
+                  <li class="header__mb-tl__nav--item__subnav--item"><a href="./news.html">Tin khuyến mãi</a></li>
+                  <li class="header__mb-tl__nav--item__subnav--item"><a href="./news.html">Tin khuyến mãi</a></li>
+                  <li class="header__mb-tl__nav--item__subnav--item"><a href="./news.html">Tin khuyến mãi</a></li>
+                  <li class="header__mb-tl__nav--item__subnav--item"><a href="./news.html">Tin khuyến mãi</a></li>
+                  <li class="header__mb-tl__nav--item__subnav--item"><a href="./news.html">Tin khuyến mãi</a></li>
+                  <li class="header__mb-tl__nav--item__subnav--item"><a href="./news.html">Tin khuyến mãi</a></li>
+                  <li class="header__mb-tl__nav--item__subnav--item"><a href="./news.html">Tin khuyến mãi</a></li>
+                </ul>
+              </li>
+              <li class="header__mb-tl__nav--item">
+                <div class="header__mb-tl__nav--item__name" >
+                  <p><a href="./service.html">Dịch vụ</a></p>
+                  <i class="fas fa-sort-down"></i>
+                </div>
+                <ul class="header__mb-tl__nav--item__subnav">
+                  <li class="header__mb-tl__nav--item__subnav--item"><a href="./service.html">Chăm sóc khách hàng</a></li>
+                  <li class="header__mb-tl__nav--item__subnav--item"><a href="./sv-guarantee.html">Chính sách bảo hành</a></li>
+                  <li class="header__mb-tl__nav--item__subnav--item"><a href="./sv-maintenance.html">Bảo dưỡng định kỳ</a></li>
+                  <li class="header__mb-tl__nav--item__subnav--item"><a href="./sv-accessories.html">Phụ tùng và phụ kiện</a></li>
+                </ul>
+              </li>
+              <li class="header__mb-tl__nav--item">
+                <div class="header__mb-tl__nav--item__name" >
+                  <p><a href="./test-drive.html">Đăng ký lái thử</a></p>
+                  <i class="fas fa-sort-down"></i>
+                </div>
+                <ul class="header__mb-tl__nav--item__subnav">
+                  <li class="header__mb-tl__nav--item__subnav--item"><a href="./test-drive.html">Đăng ký lái thử</a></li>
+                  <li class="header__mb-tl__nav--item__subnav--item"><a href="./maintenance.html">Đặt lịch bảo dưỡng</a></li>
+                </ul>
+              </li>
+              <li class="header__mb-tl__nav--item">
+                <div class="header__mb-tl__nav--item__name" >
+                  <p><a href="./buycar.html">Mua xe</a></p>
+                  <i class="fas fa-sort-down"></i>
+                </div>
+                <ul class="header__mb-tl__nav--item__subnav">
+                  <li class="header__mb-tl__nav--item__subnav--item"><a href="./buycar.html">Bảng giá</a></li>
+                  <li class="header__mb-tl__nav--item__subnav--item"><a href="./cost-estimates.html">Dự toán chi phí</a></li>
+                  <li class="header__mb-tl__nav--item__subnav--item"><a href="./installment.html">Hỗ trợ trả góp</a></li>
+                  <li class="header__mb-tl__nav--item__subnav--item"><a href="./procudure.html">Hướng dẫn thủ tục</a></li>
+                </ul>
+              </li>
+              <li class="header__mb-tl__nav--item">
+                <div class="header__mb-tl__nav--item__name">
+                  <p><a href="./contact.html">Liên hệ</a></p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="grid wide">
+          <div class="content__header">
+            <div class="content__header--item l-3 c-6 m-6"><a href="./buycar.html">Bảng giá</a></div>
+            <div class="content__header--item l-3 c-6 m-6"><a href="./cost-estimates.html">Dự toán chi phí</a></div>
+            <div class="content__header--item active l-3 c-6 m-6"><a href="./installment.html">Hỗ trợ trả góp</a></div>
+            <div class="content__header--item l-3 c-6 m-6"><a href="./procudure.html">Hướng dẫn thủ tục</a></div>
+          </div>
+          <div class="content__installment">
+            <div class="content__left l-6 m-6 c-12">
+              <div class="content__item">
+                <div class="content__item--name">Mẫu xe</div>
+                <select name="" id="">
+                  <option value="">Chọn mẫu xe</option>
+                  <option value="">Grand i10</option>
+                  <option value="">Grand i10 sedan</option>
+                  <option value="">Tucson</option>
+                  <option value="">New Santa Fe</option>
+                  <option value="">Elantra 2019</option>
+                  <option value="">Elantra sport</option>
+                </select>
+              </div>
+              <div class="content__item">
+                <div class="content__item--name">Dòng xe</div>
+                <select name="" id="">
+                  <option value="">Chọn dòng xe</option>
+                </select>
+              </div>
+              <div class="content__item">
+                <div class="content__item--name">Trả trước</div>
+                <select name="" id="">
+                  <option value="">Số tiền trả trước</option>
+                  <option value="">10%</option>
+                  <option value="">20%</option>
+                  <option value="">30%</option>
+                  <option value="">40%</option>
+                  <option value="">50%</option>
+                  <option value="">60%</option>
+                  <option value="">70%</option>
+                  <option value="">80%</option>
+                </select>
+              </div>
+              <div class="content__item">
+                <div class="content__item--name">Lãi suất/năm(%)</div>
+                <input type="number" placeholder="">
+              </div>
+              <div class="content__item">
+                <div class="content__item--name">Thời hạn</div>
+                <select name="" id="">
+                  <option value="">Thời hạn vay</option>
+                  <option value="">6 tháng</option>
+                  <option value="">12 tháng</option>
+                  <option value="">18 tháng</option>
+                  <option value="">24 tháng</option>
+                  <option value="">32 tháng</option>
+                  <option value="">48 tháng</option>
+                  <option value="">96 tháng</option>
+                </select>
+              </div>
+              <div class="content__item">
+                <div class="content__submit">Tính</div>
+                <div class="content__submit">Huỷ</div>
+              </div>
+            </div>
+            <div class="content__right l-6 m-6 c-12">
+              <table>
+                <tr>
+                  <th>Kỳ</th>
+                  <th>Tiền gốc(VND)</th>
+                  <th>Lãi suất / năm(VNĐ)</th>
+                  <th>Gốc + Lãi(VND)</th>
+                  <th>Dư nợ(VND)</th>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>6.333.333</td>
+                  <td>124.321</td>
+                  <td>6.457.654</td>
+                  <td>335.666.667</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="container__img">
+          <div class="container__register">
+            <div class="container__register--title">Đăng ký để nhận tin từ Hyundai An Phú</div>
+            <input placeholder="Nhập địa chỉ Email" type="text" class="container__register--input">
+            <div class="container__register--btn">Gửi</div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="footer__detail">
+          <div class="footer__detail--item l-3-22 m-6 c-12">
+            <img src="./assets/img/daily-logo-footer.png" alt="" class="footer__detail--item__image">
+            <div class="footer__detail--item__desc">Hyundai An Phú - Đại lý ủy quyền chính thức của Hyundai Thành Công là địa điểm trưng bày các dòng xe mới nhất của Hyundai.</div>
+            <div class="footer__detail--item__desc">Tọa lạc tại trung tâm Thành Phố Hồ Chí Minh với các Showroom chuẩn 1S, 2S hiện đại, cùng đội ngũ chuyên viên tư vấn giàu kinh nghiệm.</div>
+            <div class="footer__detail--item__desc">Hyundai An Phú mang sứ mệnh phục vụ khách hàng trên Toàn quốc, giúp khách hàng có những trải nghiệm ấn tượng về sản phẩm - dịch vụ cao cấp của chúng tôi.</div>
+            <div class="footer__detail--item__desc">Liên hệ ngay để được tư vấn và nhận các chương trình ưu đãi hấp dẫn</div>
+          </div>
+          <div class="footer__detail--item l-3-22 m-6 c-12">
+            <div class="footer__detail--item__heading">HÌNH ẢNH</div>
+            <div class="footer__detail--item__bottom">
+              <img src="./assets/img/181218_Gioi-thieu-showroom.jpg" alt="" class="footer__detail--item__img">
+            </div>
+          </div>
+          <div class="footer__detail--item l-3-22 m-6 c-12">
+            <div class="footer__detail--item__heading">BÀI VIẾT GẦN ĐÂY</div>
+            <div class="footer__detail--item__bottom">
+              <div class="footer__detail--item__post">
+                <img src="./assets/img/C57D07CF-47D0-4268-9BFB-A653AD5C29AC-min.jpg" alt="" style="min-width: 9.4rem; min-height: 5.5rem;" class="footer__detail--item__post--img">
+                <div class="footer__detail--item__post--desc">
+                  <div class="footer__detail__post--title">
+                    🚘 CHƯƠNG TRÌNH GIA HẠN BẢO HÀNH “H...
+                  </div>
+                  <div class="footer__detail--item__post--time">17/04/2020</div>
+                </div>
+              </div>
+              <div class="footer__detail--item__post">
+                <img src="./assets/img/IMG_8281-min.jpg" alt="" style="min-width: 9.4rem; min-height: 5.5rem;" class="footer__detail--item__post--img">
+                <div class="footer__detail--item__post--desc">
+                  <div class="footer__detail__post--title">
+                    🔥 KHỞI SẮC ROADSHOW THÁNG 06 TẠI H...
+                  </div>
+                  <div class="footer__detail--item__post--time">13/06/2020</div>
+                </div>
+              </div>
+              <div class="footer__detail--item__post">
+                <img src="./assets/img/Post Web-01.jpg" alt="" style="max-width: 9.4rem; min-height: 5.5rem;" class="footer__detail--item__post--img">
+                <div class="footer__detail--item__post--desc">
+                  <div class="footer__detail__post--title">
+                    🏆 ĐÓN XE SANG CÙNG HYUNDAI AN PHÚ ...
+                  </div>
+                <div class="footer__detail--item__post--time">12/06/2020</div>
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="footer__detail--item l-3-22 m-6 c-12">
+            <div class="footer__detail--item__heading">FACEBOOK</div>
+            <div class="footer__detail--item__bottom">
+              <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fhyundaianphu.mpcauto.vn%2F&tabs=timeline&width=290&height=300&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="100%" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="footer__address">
+          <div class="footer__address--item l-4-30 m-4-33 c-12">
+            <div class="footer__address--item__icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="footer__address--item__info">Showroom 2S: 1052 Nguyễn Văn Linh, P.Tân Phong, Quận 7, TP.HCM</div>
+          </div>
+          <div class="footer__address--item l-4-30 m-4-33 c-12">
+            <div class="footer__address--item__icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="footer__address--item__info">Showroom 1S: 5A Nguyễn Thị Minh Khai, P.Bến Nghé, Quận 1, TP.HCM</div>
+          </div>
+          <div class="footer__address--item l-4-30 m-4-33 c-12">
+            <div class="footer__address--item__icon"><i class="fas fa-envelope"></i></div>
+            <div class="footer__address--item__info"> info@anphuhyundai.com.vn</div>
+          </div>
+        </div>
+        <div class="footer__copyright">COPYRIGHT ©IDOCNET 2018</div>
+      </div>
+    </div>
+    <script src="./js/main.js"></script>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v11.0" nonce="x25ps3wk"></script>
+    <script src="./js/buycar.js"></script>
+  </body>
+</html>
+

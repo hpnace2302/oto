@@ -15,6 +15,9 @@
   .scroll-top,.social,.regist_make-app,.header__left,.header__right {
     display:none;
   }
+  .header__mb-tl {
+    display: block;
+  }
   .header {
     position:fixed;
     background-color: var(--background-color1);
@@ -144,9 +147,15 @@
     width: 25rem;
   }
   .content__submit {
-    width: 25%;
+    width: 35%;
   }
   .content__item--note {
     margin-top: 2rem;
+  }
+  .content__heading {
+    font-size: 2.4rem;
+  }
+  .content__maintenance--form__btn {
+    text-align: center;
   }
 }

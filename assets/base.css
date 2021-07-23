@@ -15,9 +15,9 @@
 .header__nav--item.active {
   border-bottom: 2px solid #0E528B;
 }
-.content__nav--product__item--name.active {
+/* .content__nav--product__item--name.active {
   color: var(--primary-color);
-}
+} */
 .content__slide--nav__item.active {
   border-bottom: 3px solid var(--text-color2);
 }
@@ -240,4 +240,17 @@ span {color: var(--text-color2); cursor: pointer;}
 }
 .header__nav--item__subnav--item a {
   color: var(--text-color1);
+}
+.header__mb-tl {
+  display: none;
+}
+a:visited {
+  color: var(--text-color1);
+}
+.content__nav--product__item.active {
+  background-color: var(--primary-color);
+}
+.content__nav--product__item.active div {
+  color: var(--text-color3);
+
 }

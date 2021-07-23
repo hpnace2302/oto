@@ -273,4 +273,7 @@
   .chat {
     width: 25rem;
   }
+  .content__product--item {
+    padding-left: 0;
+  }
 }
