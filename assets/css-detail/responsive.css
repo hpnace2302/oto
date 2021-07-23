@@ -18,6 +18,12 @@
   .header__mb-tl {
     display: block;
   }
+  .content__nav--product__item.active {
+    background-color: var(--primary-color);
+  }
+  .content__nav--product__item.active div{
+    color: var(--text-color3)
+  }
   .header {
     position:fixed;
     background-color: var(--background-color1);

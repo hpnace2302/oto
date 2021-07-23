@@ -247,10 +247,7 @@ span {color: var(--text-color2); cursor: pointer;}
 a:visited {
   color: var(--text-color1);
 }
-.content__nav--product__item.active {
-  background-color: var(--primary-color);
-}
-.content__nav--product__item.active div {
-  color: var(--text-color3);
 
+.content__nav--product__item.active div {
+  color: var(--primary-color);
 }

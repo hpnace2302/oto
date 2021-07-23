@@ -86,6 +86,9 @@
   .chat__header--btn {
     display: none;
   }
+  .content__nav--product__item.active {
+    background-color: var(--primary-color);
+  }
 }
 /* Tablet */
 @media (min-width : 740px ) and (max-width : 1023px) {
@@ -132,6 +135,7 @@
   .content__product--item {
     height: 40rem;
   }
+  
 }
 
 /* Mobile */
